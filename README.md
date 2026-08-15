@@ -79,6 +79,3 @@ Deeply and losslessly extracts everything from a YouTube channel, playlist, or v
 2. **Autonomous Agents / OMP**: Place the folders directly into your agent's `skills` directory for native triggering and execution.
 
 3. **Custom Workflows**: Adapt the `SKILL.md` logic to any prompt-chaining tools (like LangChain, Flowise, or AutoGPT).
-
-## 📝 Philosophy
-I created these to solve the repetitive friction points I encountered using AI: losing context on long threads, hallucinated research details, and unorganized coding prompts. By formalizing these workflows into "Skills", I get predictable, high-quality outputs every single time.
