@@ -67,6 +67,7 @@ Crafts a self-contained delegation prompt for handing off work to another AI ses
 Runs a full, dynamic audit-and-overhaul pipeline on a project or codebase you didn't build or aren't familiar with.
 - **Sequences specialist skills:** Calls router, review, and autoresearch skills in a specific order.
 - **Diagnosis & Execution:** Classifies the project, scopes what's wrong, checks with the user, and executes the fix on a branch.
+- **Bundled Capabilities:** Built using the Meta Skill Router, Code Overhaul Skill, Autoresearch Skill, and ARA Rigor Reviewer.
 *Trigger this when you inherit a messy project, want to audit code built by a weaker model, or need a structured quality review.*
 
 ### 7. `yt-deep-extraction`
@@ -90,3 +91,11 @@ These are uncompressed, raw directory structures containing the `SKILL.md` and a
 These are packaged `.skill` files (which are actually ZIP archives containing the raw skill directories). 
 - **Use for:** The Claude.ai web interface (Claude Projects).
 - **Why:** You can upload these `.skill` files directly as project knowledge base attachments, allowing the web version of Claude to read the internal structure and instructions seamlessly.
+
+## Credits
+
+The `project-uphaul` skill bundles and builds upon several fantastic open-source skills:
+- **Meta Skill Router** — ananddtyagi/cc-marketplace (Anand Tyagi)
+- **Code Overhaul Skill** — ehmo/code-overhaul-skill (Rasty Turek)
+- **Autoresearch Skill** — ehmo/autoresearch-skill (Rasty Turek)
+- **ARA Rigor Reviewer** — Orchestra-Research/AI-Research-SKILLs (Orchestra Research), originally from ARA-Labs/Agent-Native-Research-Artifact
