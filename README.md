@@ -1,0 +1,60 @@
+# 🛠️ Personal LLM Skills & Workflows
+
+Welcome to my personal repository of **LLM Skills**. This repository contains custom, modular behaviors and workflows that I've built for my own daily day-to-day interactions and projects with Claude and other agentic LLMs. 
+
+These skills act as extended system instructions or workflows, turning conversational AI into powerful, structured workflow engines for research, design, development, and context management.
+
+## 📁 Repository Structure
+
+Each skill is self-contained in its own independent folder and includes its own `SKILL.md` along with any required references or assets. This structure is designed to be highly portable and accommodating to most AI tool architectures (like MCP servers, custom GPTs, Claude Projects, or autonomous agent environments).
+
+```text
+.
+├── skills/
+│   ├── aggregate-deep-research/
+│   ├── app-idea-to-build-prompt/
+│   ├── context-handoff/
+│   └── context-resume/
+└── README.md
+```
+
+## 🧩 Available Skills
+
+### 1. `aggregate-deep-research`
+**Multi-Phase Deep Research Pipeline**
+A robust, model-agnostic pipeline for comprehensive research. It transforms a simple prompt or topic into a full-fidelity interactive HTML guide through a strict multi-phase process:
+- **Capability Probe & Web Research:** Gathering 50-1000 sources.
+- **Decomposition:** Breaking the topic down into isolated aspects.
+- **Standalone Reports:** Generating specific reports with claim-source bindings and numbers ledgers to prevent hallucinations.
+- **Synthesis:** Aggregating data into a master synthesis and a final interactive HTML lesson.
+*Ideal for critical personal research or generating comprehensive educational materials.*
+
+### 2. `app-idea-to-build-prompt`
+**App Idea → Concept GUI → Build Prompt**
+Guides the full workflow for turning a raw app or product idea into concrete artifacts.
+- **Concept GUI:** Creates an interactive HTML/CSS/JS concept that you can click through.
+- **Build Prompt:** Generates a comprehensive and structured prompt designed to be handed off to an autonomous coding agent (like Claude Code) for the actual build.
+*Use this when pitching an idea to flesh out features, make UI/UX design choices, and prepare a solid spec before development starts.*
+
+### 3. `context-handoff`
+**Lossless Conversation Exporter**
+Exports the current conversation context into a structured, lossless package.
+- Creates a human-readable Markdown transcript and a canonical JSON record.
+- Bundles any uploaded files or images into a zip.
+*Perfect for long conversations hitting context limits, sharing context with team members, or migrating a session to a new AI workspace without starting from scratch.*
+
+### 4. `context-resume`
+**Context Loader & Resumer**
+The receiving-end counterpart to `context-handoff`.
+- Reads the handoff package (`handoff.json`, `handoff.md`, and zip archives).
+- Rehydrates the AI's context with all prior decisions, constraints, and files so work can continue seamlessly.
+*Triggered at the start of a new conversation by uploading the handoff package to pick up exactly where you left off.*
+
+## 🚀 How to Use
+
+1. **Claude Projects**: You can upload the `.md` and reference files of a specific skill into your Claude Project's knowledge base, or paste the `SKILL.md` directly into the custom instructions.
+2. **Autonomous Agents / OMP**: Place the folders directly into your agent's `skills` directory for native triggering and execution.
+3. **Custom Workflows**: Adapt the `SKILL.md` logic to any prompt-chaining tools (like LangChain, Flowise, or AutoGPT).
+
+## 📝 Philosophy
+I created these to solve the repetitive friction points I encountered using AI: losing context on long threads, hallucinated research details, and unorganized coding prompts. By formalizing these workflows into "Skills", I get predictable, high-quality outputs every single time.

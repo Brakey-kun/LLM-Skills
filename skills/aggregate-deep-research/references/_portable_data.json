@@ -1,0 +1,264 @@
+{
+  "_meta": {
+    "project": "Minecraft Bedrock Marketplace Research",
+    "version": "1.0",
+    "total_ideas": 5,
+    "last_updated": "2026-07-17",
+    "pipeline": "Aggregate Deep Research v2.0"
+  },
+  "summary": {
+    "tier_breakdown": {
+      "hours": 1,
+      "weekend": 2,
+      "sprint": 1,
+      "platform": 1
+    },
+    "category_breakdown": {
+      "foundation": 2,
+      "technical": 2,
+      "integration": 1
+    }
+  },
+  "categories": {
+    "foundation": {
+      "label": "Foundation (Art + Basics)",
+      "count": 2,
+      "ideas": [1, 2]
+    },
+    "technical": {
+      "label": "Technical Depth (Scripting + Design)",
+      "count": 2,
+      "ideas": [3, 4]
+    },
+    "integration": {
+      "label": "Integration (Capstone)",
+      "count": 1,
+      "ideas": [5]
+    }
+  },
+  "tiers": {
+    "hours": {
+      "label": "⚡ Hours (2 hrs - 2 days)",
+      "count": 1,
+      "ideas": [1]
+    },
+    "weekend": {
+      "label": "🛠️ Weekend (1 - 7 days)",
+      "count": 2,
+      "ideas": [2, 3]
+    },
+    "sprint": {
+      "label": "🏗️ Sprint (1 - 3 weeks)",
+      "count": 1,
+      "ideas": [4]
+    },
+    "platform": {
+      "label": "🏢 Platform (2 weeks - 1+ months)",
+      "count": 1,
+      "ideas": [5]
+    }
+  },
+  "everything": [
+    {
+      "id": 1,
+      "name": "Themed Skin Pack",
+      "tier": "hours",
+      "tier_label": "⚡ Hours",
+      "effort": "2-3 weeks",
+      "category": "foundation",
+      "sources": ["Generalist Programmer YT", "Microsoft Learn: Resource Packs", "Blockbench docs"],
+      "validation": "Publish free version on Planet Minecraft; iterate on feedback",
+      "intent_and_origin": "Lowest barrier to entry for Marketplace. Proves pixel art consistency, manifest correctness, slim/classic handling, and packaging discipline. Reviewers expect at least one polished skin pack in portfolio. Theme should target underserved niche (e.g., 'Retro-Future Workers', 'Cryptid Hunters', 'Eco-Engineers') rather than generic anime/character packs.",
+      "design_objective": "Create 12 themed skins (6 classic + 6 slim) with 3 variants each = 36 texture files. Resource pack only (type: 'resources'). Manifest with unique UUIDs, correct versioning. Test on Steve/Alex models, verify no Z-fighting. Price tier: 160-320 Minecoins (~$0.64-$1.28 creator). Build in Blockbench skin template, package via Bridge.",
+      "my_analysis_and_suggestions": "UX Strategy: Skin packs are impulse buys — trailer must show all variants in 15 seconds. Monetization: Volume game; 100 sales at 320 coins = $128. Differentiation: Pick a cohesive visual theme with clear silhouette language. Avoid saturated markets (anime, superhero, generic 'cool'). Use outer layer for hats/accessories. Document theme research in design doc."
+    },
+    {
+      "id": 2,
+      "name": "64x Texture Pack",
+      "tier": "weekend",
+      "tier_label": "🛠️ Weekend",
+      "effort": "4-6 weeks",
+      "category": "foundation",
+      "sources": ["Microsoft Learn: Resource Packs, Models, Materials", "Blockbench geometry tutorials", "Bridge render controller docs"],
+      "validation": "Release beta on MCPEDL/Planet Minecraft; collect performance reports from mobile users",
+      "intent_and_origin": "Proves texture artistry at scale, geometry system mastery, material/render pipeline, and performance awareness. Reviewers look for: full vanilla coverage, custom models (not just reskins), connected textures, and cohesive art direction. Theme must be visually distinct — not 'faithful' or 'default+' which are saturated.",
+      "design_objective": "Full block/item/entity retexture at 64x (128x for hero blocks). 3+ custom block models via Blockbench (.geo.json + UV atlas). Custom materials: emissive, transparency, animated textures. Render controllers for state-based variants. Connected textures via model permutations. Resource pack only. Price tier: 320-660 Minecoins (~$1.28-$2.64 creator). Target underserved themes: Paper Craft, Neon Noir, Biomechanical.",
+      "my_analysis_and_suggestions": "UX Strategy: Texture packs are 'live with it' purchases — screenshots must show world context, not just block grids. Monetization: Recurring buyers; faithful packs have longest tail. Differentiation: Invest in custom models for 3-5 signature blocks (furnace, crafting table, enchanting table) that players see constantly. Use texture atlases for performance. Test on Android/iOS for memory/load times."
+    },
+    {
+      "id": 3,
+      "name": "Scripted Micro-Add-On",
+      "tier": "weekend",
+      "tier_label": "🛠️ Weekend",
+      "effort": "5-8 weeks",
+      "category": "technical",
+      "sources": ["Microsoft Learn: Script API, Molang, Custom Entities/Blocks", "Bridge TypeScript setup guide", "Bedrock.dev Script API reference"],
+      "validation": "Open-source core mechanic on GitHub; invite code review from Bridge Discord",
+      "intent_and_origin": "The single most important technical proof for reviewers. Demonstrates Script API fluency, component architecture, event-driven design, tick budget discipline, and gameplay UI/UX. Must be a complete, polished mechanic — not a tech demo. Concept should be instantly understandable: 'Grappling Hook', 'Portable Workbench', or 'Pet Companion'.",
+      "design_objective": "Behavior + Resource + Scripts pack. TypeScript entry (scripts/main.ts → compiled JS). 1 custom entity (components, events, animation controller) + 1 custom block (components, permutations, block entity for storage) + 1 scripted system. Molang in animations/render controllers. Custom UI via @minecraft/server-ui (ActionFormData). Tick profiling: stay under 50ms. Price tier: 660-1,720+ Minecoins (~$2.64-$6.88+ creator).",
+      "my_analysis_and_suggestions": "UX Strategy: Scripted add-ons need in-game tutorial — first 30 seconds must teach mechanic without text walls. Monetization: Higher price point but lower volume; relies on YouTube showcases. Differentiation: Pick a mechanic that feels 'impossible in vanilla' but fits Bedrock's sandbox (physics, inventory, companion AI). Document architecture in design doc: component diagram, event flow, tick budget breakdown. This is your engineering portfolio piece."
+    },
+    {
+      "id": 4,
+      "name": "Adventure Map",
+      "tier": "sprint",
+      "tier_label": "🏗️ Sprint",
+      "effort": "6-8 weeks",
+      "category": "technical",
+      "sources": ["Microsoft Learn: Commands, NPCs, Structure Blocks, Loot Tables", "Bedrock Editor world building guide", "Community map design principles (Planet Minecraft featured maps)"],
+      "validation": "Recruit 3+ playtesters via Discord; collect completion times, stuck points, fun ratings (1-10)",
+      "intent_and_origin": "Proves level design, pacing, command/function mastery, player onboarding without tutorials, and replayability design. Reviewers want to see: clear progression, fair challenge, no softlocks, and a satisfying 30-45 minute experience. Genre should showcase systems thinking (puzzle, parkour, or narrative mystery).",
+      "design_objective": "World Template + Behavior Pack. Built in Bedrock Editor → export via Structure Blocks (.mcstructure). Behavior pack: function files (.mcfunction) for progression, commands for mechanics. NPCs with dialogue trees, command triggers, reward dispensing. Loot tables for chests; trade tables for vendors. Scoreboard/objectives for progression. Playtest report with 3+ testers. Price tier: 490-1,340 Minecoins (~$1.96-$5.36 creator).",
+      "my_analysis_and_suggestions": "UX Strategy: First 2 minutes must establish goal, controls, and hook — no text dumps. Use environmental storytelling. Monetization: Maps are 'one-and-done' but drive reviews and portfolio depth. Differentiation: Design around a single core mechanic that escalates (puzzle: new redstone logic per room; parkour: new movement tech per floor; narrative: new clue type per chapter). Document level flow diagram in design doc."
+    },
+    {
+      "id": 5,
+      "name": "Capstone Mini Mash-up",
+      "tier": "platform",
+      "tier_label": "🏢 Platform",
+      "effort": "8-12 weeks",
+      "category": "integration",
+      "sources": ["All previous pack sources", "Microsoft Learn: Pack dependencies, Versioning", "Partner certification requirements (community knowledge)"],
+      "validation": "Full test matrix: Win10, Android, iOS, Xbox Dev Mode. Performance budget: <30ms tick mobile, <100MB RAM",
+      "intent_and_origin": "Integration test of all skills — the 'final exam'. Must prove end-to-end delivery, cross-system integration, performance budgeting, commercial polish, and project management. Everything must work together without conflicts: world depends on custom blocks/entities, texture pack reskins vanilla + custom consistently, skins match world theme, scripted system integrated into progression.",
+      "design_objective": "World + Texture Pack (32x) + 2 Skins + 1 Scripted System. All custom content interdependent. Notion/GitHub Projects board with epics: World, Texture, Skins, Script, Integration, Polish, Test, Docs. Weekly milestones: W27-28 blockout, W29-32 systems, W33-36 art pass, W37-38 integration, W39-40 polish. Price tier: 990-2,500+ Minecoins (~$3.96-$10+ creator). Flagship quality.",
+      "my_analysis_and_suggestions": "UX Strategy: This is your 'flagship' — trailer production value matters. Monetization: Highest single-pack revenue potential; also drives cross-sales to other packs. Differentiation: Theme must unify all systems (e.g., 'Cyberpunk Heist' world + neon texture + hacker skins + grappling hook script). Document integration architecture: dependency graph, shared assets, conflict resolution. This proves you can ship a commercial product, not just tech demos."
+    }
+  ],
+  "top_20_quick_start": [
+    {
+      "id": 1,
+      "name": "Themed Skin Pack",
+      "effort": "2-3 weeks",
+      "why_first": "Lowest risk, fastest feedback loop, proves art pipeline + manifest discipline. Required portfolio piece."
+    },
+    {
+      "id": 2,
+      "name": "64x Texture Pack",
+      "effort": "4-6 weeks",
+      "why_first": "Runs parallel to Skin Pack; proves geometry/material pipeline. Different skill set from skins."
+    },
+    {
+      "id": 3,
+      "name": "Scripted Micro-Add-On",
+      "effort": "5-8 weeks",
+      "why_first": "Critical technical proof. Sequential bottleneck — start after Skin Pack foundation."
+    }
+  ],
+  "design_patterns": [
+    {
+      "name": "Parallel Art Tracks",
+      "description": "Skins and Textures are pure art — run them simultaneously. Scripting is sequential bottleneck. Maximizes calendar efficiency."
+    },
+    {
+      "name": "Dossier-Driven Development",
+      "description": "Write the project dossier (tagline, features, test plan) BEFORE building. Forces scope clarity and reviewer empathy."
+    },
+    {
+      "name": "Public Beta on Free Platforms",
+      "description": "Release early versions on Planet Minecraft/MCPEDL. Free QA, community building, and portfolio evidence of iteration."
+    },
+    {
+      "name": "Content Calendar as Accountability",
+      "description": "Weekly devlog + 3 Shorts + 5 Tweets = forced progress. Audience becomes stakeholder; algorithm rewards consistency."
+    },
+    {
+      "name": "Theme-First, Mechanics-Second",
+      "description": "Pick underserved visual themes first (Retro-Future, Neon Noir, Biomechanical). Mechanics serve theme, not vice versa. Easier marketing."
+    },
+    {
+      "name": "Performance Budget from Day 1",
+      "description": "Target <30ms tick on mobile, <100MB RAM. Profile every session. Mobile-first prevents certification rejection."
+    },
+    {
+      "name": "Documentation as Product",
+      "description": "Design docs, test reports, architecture diagrams are portfolio pieces. Reviewers read them; employers value them."
+    },
+    {
+      "name": "Cross-Pack Integration Design",
+      "description": "Capstone isn't 'one more pack' — it's the integration test. Design dependencies between packs from Month 1 (shared palette, shared systems)."
+    },
+    {
+      "name": "Reviewer Empathy",
+      "description": "Reviewers spend ~2 min per project. Dossier must be scannable: tagline, trailer, screenshots, tech badges, test report, checklist. No walls of text."
+    }
+  ],
+  "idx_by_id": {
+    "1": {
+      "id": 1,
+      "name": "Themed Skin Pack",
+      "tier": "hours",
+      "tier_label": "⚡ Hours",
+      "effort": "2-3 weeks",
+      "category": "foundation",
+      "sources": ["Generalist Programmer YT", "Microsoft Learn: Resource Packs", "Blockbench docs"],
+      "validation": "Publish free version on Planet Minecraft; iterate on feedback",
+      "intent_and_origin": "Lowest barrier to entry for Marketplace. Proves pixel art consistency, manifest correctness, slim/classic handling, and packaging discipline. Reviewers expect at least one polished skin pack in portfolio. Theme should target underserved niche (e.g., 'Retro-Future Workers', 'Cryptid Hunters', 'Eco-Engineers') rather than generic anime/character packs.",
+      "design_objective": "Create 12 themed skins (6 classic + 6 slim) with 3 variants each = 36 texture files. Resource pack only (type: 'resources'). Manifest with unique UUIDs, correct versioning. Test on Steve/Alex models, verify no Z-fighting. Price tier: 160-320 Minecoins (~$0.64-$1.28 creator). Build in Blockbench skin template, package via Bridge.",
+      "my_analysis_and_suggestions": "UX Strategy: Skin packs are impulse buys — trailer must show all variants in 15 seconds. Monetization: Volume game; 100 sales at 320 coins = $128. Differentiation: Pick a cohesive visual theme with clear silhouette language. Avoid saturated markets (anime, superhero, generic 'cool'). Use outer layer for hats/accessories. Document theme research in design doc."
+    },
+    "2": {
+      "id": 2,
+      "name": "64x Texture Pack",
+      "tier": "weekend",
+      "tier_label": "🛠️ Weekend",
+      "effort": "4-6 weeks",
+      "category": "foundation",
+      "sources": ["Microsoft Learn: Resource Packs, Models, Materials", "Blockbench geometry tutorials", "Bridge render controller docs"],
+      "validation": "Release beta on MCPEDL/Planet Minecraft; collect performance reports from mobile users",
+      "intent_and_origin": "Proves texture artistry at scale, geometry system mastery, material/render pipeline, and performance awareness. Reviewers look for: full vanilla coverage, custom models (not just reskins), connected textures, and cohesive art direction. Theme must be visually distinct — not 'faithful' or 'default+' which are saturated.",
+      "design_objective": "Full block/item/entity retexture at 64x (128x for hero blocks). 3+ custom block models via Blockbench (.geo.json + UV atlas). Custom materials: emissive, transparency, animated textures. Render controllers for state-based variants. Connected textures via model permutations. Resource pack only. Price tier: 320-660 Minecoins (~$1.28-$2.64 creator). Target underserved themes: Paper Craft, Neon Noir, Biomechanical.",
+      "my_analysis_and_suggestions": "UX Strategy: Texture packs are 'live with it' purchases — screenshots must show world context grids. Monetization: Recurring buyers; faithful packs have longest tail. Differentiation: Invest in custom models for 3-5 signature blocks (furnace, crafting table, enchanting table) that players see constantly. Use texture atlases for performance. Test on Android/iOS for memory/load times."
+    },
+    "3": {
+      "id": 3,
+      "name": "Scripted Micro-Add-On",
+      "tier": "weekend",
+      "tier_label": "🛠️ Weekend",
+      "effort": "5-8 weeks",
+      "category": "technical",
+      "sources": ["Microsoft Learn: Script API, Molang, Custom Entities/Blocks", "Bridge TypeScript setup guide", "Bedrock.dev Script API reference"],
+      "validation": "Open-source core mechanic on GitHub; invite code review from Bridge Discord",
+      "intent_and_origin": "The single most important technical proof for reviewers. Demonstrates Script API fluency, component architecture, event-driven design, tick budget discipline, and gameplay UI/UX. Must be a complete, polished mechanic — not a tech demo. Concept should be instantly understandable: 'Grappling Hook', 'Portable Workbench', or 'Pet Companion'.",
+      "design_objective": "Behavior + Resource + Scripts pack. TypeScript entry (scripts/main.ts → compiled JS). 1 custom entity (components, events, animation controller) + 1 custom block (components, permutations, block entity for storage) + 1 scripted system. Molang in animations/render controllers. Custom UI via @minecraft/server-ui (ActionFormData). Tick profiling: stay under 50ms. Price tier: 660-1,720+ Minecoins (~$2.64-$6.88+ creator).",
+      "my_analysis_and_suggestions": "UX Strategy: Scripted add-ons need in-game tutorial — first 30 seconds must teach mechanic without text walls. Monetization: Higher price point but lower volume; relies on YouTube showcases. Differentiation: Pick a mechanic that feels 'impossible in vanilla' but fits Bedrock's sandbox (physics, inventory, companion AI). Document architecture in design doc: component diagram, event flow, tick budget breakdown. This is your engineering portfolio piece."
+    },
+    "4": {
+      "id": 4,
+      "name": "Adventure Map",
+      "tier": "sprint",
+      "tier_label": "🏗️ Sprint",
+      "effort": "6-8 weeks",
+      "category": "technical",
+      "sources": ["Microsoft Learn: Commands, NPCs, Structure Blocks, Loot Tables", "Bedrock Editor world building guide", "Community map design principles (Planet Minecraft featured maps)"],
+      "validation": "Recruit 3+ playtesters via Discord; collect completion times, stuck points, fun ratings (1-10)",
+      "intent_and_origin": "Proves level design, pacing, command/function mastery, player onboarding without tutorials, and replayability design. Reviewers want to see: clear progression, fair challenge, no softlocks, and a satisfying 30-45 minute experience. Genre should showcase systems thinking (puzzle, parkour, or narrative mystery).",
+      "design_objective": "World Template + Behavior Pack. Built in Bedrock Editor → export via Structure Blocks (.mcstructure). Behavior pack: function files (.mcfunction) for progression, commands for mechanics. NPCs with dialogue trees, command triggers, reward dispensing. Loot tables for chests; trade tables for vendors. Scoreboard/objectives for progression. Playtest report with 3+ testers. Price tier: 490-1,340 Minecoins (~$1.96-$5.36 creator).",
+      "my_analysis_and_suggestions": "UX Strategy: First 2 minutes must establish goal, controls, and hook — no text dumps. Use environmental storytelling. Monetization: Maps are 'one-and-done' but drive reviews and portfolio depth. Differentiation: Design around a single core mechanic that escalates (puzzle: new redstone logic per room; parkour: new movement tech per floor; narrative: new clue type per chapter). Document level flow diagram in design doc."
+    },
+    "5": {
+      "id": 5,
+      "name": "Capstone Mini Mash-up",
+      "tier": "platform",
+      "tier_label": "🏢 Platform",
+      "effort": "8-12 weeks",
+      "category": "integration",
+      "sources": ["All previous pack sources", "Microsoft Learn: Pack dependencies, Versioning", "Partner certification requirements (community knowledge)"],
+      "validation": "Full test matrix: Win10, Android, iOS, Xbox Dev Mode. Performance budget: <30ms tick mobile, <100MB RAM",
+      "intent_and_origin": "Integration test of all skills — the 'final exam'. Must prove end-to-end delivery, cross-system integration, performance budgeting, commercial polish, and project management. Everything must work together without conflicts: world depends on custom blocks/entities, texture pack reskins vanilla + custom consistently, skins match world theme, scripted system integrated into progression.",
+      "design_objective": "World + Texture Pack (32x) + 2 Skins + 1 Scripted System. All custom content interdependent. Notion/GitHub Projects board with epics: World, Texture, Skins, Script, Integration, Polish, Test, Docs. Weekly milestones: W27-28 blockout, W29-32 systems, W33-36 art pass, W37-38 integration, W39-40 polish. Price tier: 990-2,500+ Minecoins (~$3.96-$10+ creator). Flagship quality.",
+      "my_analysis_and_suggestions": "UX Strategy: This is your 'flagship' — trailer production value matters. Monetization: Highest single-pack revenue potential; also drives cross-sales to other packs. Differentiation: Theme must unify all systems (e.g., 'Cyberpunk Heist' world + neon texture + hacker skins + grappling hook script). Document integration architecture: dependency graph, shared assets, conflict resolution. This proves you can ship a commercial product, not just tech demos."
+    }
+  },
+  "idx_by_category": {
+    "foundation": [1, 2],
+    "technical": [3, 4],
+    "integration": [5]
+  },
+  "idx_by_tier": {
+    "hours": [1],
+    "weekend": [2, 3],
+    "sprint": [4],
+    "platform": [5]
+  }
+}

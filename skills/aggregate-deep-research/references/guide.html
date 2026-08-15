@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Bedrock Marketplace — Complete Research & Strategy Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0f12;--bg-elevated:#14181d;--bg-hover:#1a1f26;--bg-card:#181c22;
+  --fg:#e4e6ea;--fg-muted:#8b919a;--fg-dim:#5c616a;
+  --accent:#6c8cff;--accent-muted:#2d3a5e;--accent-glow:rgba(108,140,255,0.15);
+  --amber:#f59e0b;--amber-muted:#2a2410;
+  --border:#2a2f3a;--border-subtle:rgba(255,255,255,0.06);
+  --success:#10b981;--error:#ef4444;
+  --radius-sm:4px;--radius:8px;--radius-lg:12px;--radius-xl:16px;
+  --shadow-card:0 0 0 1px rgba(255,255,255,0.06),0 2px 8px rgba(0,0,0,0.3);
+  --shadow-card-hover:0 0 0 1px rgba(108,140,255,0.2),0 8px 24px rgba(0,0,0,0.4);
+  --shadow-glow:0 0 24px -4px rgba(108,140,255,0.15);
+  --transition-fast:120ms ease;--transition:200ms ease;--transition-slow:300ms ease;
+}
+@media (prefers-reduced-motion:reduce){*, *::before, *::after{transition-duration:0s!important;animation-duration:0s!important;}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
+.mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Consolas,monospace}
+a{color:var(--accent);text-decoration:none;transition:color var(--transition-fast)}
+a:hover{color:#9ab0ff}
+img{max-width:100%;height:auto;display:block}
+
+/* Layout */
+.section{max-width:1200px;margin:0 auto;padding:5rem 1.5rem}
+@media(max-width:768px){.section{padding:3rem 1rem}}
+.sec-label{display:inline-block;padding:0.25rem 0.75rem;border-radius:9999px;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent-muted);color:var(--accent);border:1px solid rgba(108,140,255,0.15);margin-bottom:1rem}
+h1{font-size:clamp(2.5rem,8vw,5rem);font-weight:800;letter-spacing:-0.04em;line-height:1.1}
+h2{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;line-height:1.2;margin:2rem 0 1rem}
+h3{font-size:1.25rem;font-weight:600;line-height:1.3;margin:1.5rem 0 0.75rem}
+p{color:var(--fg-muted);margin:1rem 0}
+.lead{font-size:1.125rem;color:var(--fg);max-width:70ch}
+.muted{color:var(--fg-dim);font-size:0.875rem}
+.gt{background:linear-gradient(135deg,var(--accent),#a5c0ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.badge{display:inline-flex;align-items:center;padding:0.2rem 0.6rem;border-radius:9999px;font-size:0.7rem;font-weight:600;letter-spacing:0.05em}
+.badge-accent{background:var(--accent-muted);color:var(--accent);border:1px solid rgba(108,140,255,0.2)}
+.badge-amber{background:var(--amber-muted);color:var(--amber);border:1px solid rgba(245,158,11,0.2)}
+.badge-success{background:rgba(16,185,129,0.15);color:var(--success);border:1px solid rgba(16,185,129,0.2)}
+.badge-error{background:rgba(239,68,68,0.15);color:var(--error);border:1px solid rgba(239,68,68,0.2)}
+.card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;transition:all var(--transition)}
+.card:hover{border-color:rgba(108,140,255,0.2);box-shadow:var(--shadow-card-hover)}
+.grid{display:grid;gap:1rem}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+@media(max-width:768px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+.table-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:0.875rem}
+th,td{padding:0.75rem 1rem;text-align:left;border-bottom:1px solid var(--border)}
+th{background:var(--bg-elevated);font-weight:600;color:var(--fg);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em}
+tr:hover td{background:var(--bg-hover)}
+tr:last-child td{border-bottom:none}
+.stats-bar{display:flex;flex-wrap:wrap;gap:1.5rem;margin:2rem 0}
+.stat{flex:1;min-width:150px}
+.stat-value{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;letter-spacing:-0.02em;background:linear-gradient(135deg,var(--accent),#a5c0ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.stat-label{font-size:0.875rem;color:var(--fg-muted);margin-top:0.25rem}
+.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;padding:2rem 1.5rem}
+.hero::before{content:'';position:absolute;top:-50%;left:50%;transform:translateX(-50%);width:120%;height:120%;background:radial-gradient(ellipse at center,rgba(108,140,255,0.08),transparent 70%);pointer-events:none;z-index:0}
+.hero-content{position:relative;z-index:1;max-width:900px}
+.hero h1{margin-bottom:1.5rem}
+.hero .lead{margin-bottom:2rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.875rem 1.75rem;border-radius:var(--radius);font-weight:600;font-size:0.9375rem;transition:all var(--transition-fast);border:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:#0d0f12}
+.btn-primary:hover{background:#9ab0ff;transform:translateY(-2px);box-shadow:var(--shadow-glow)}
+.btn-secondary{background:var(--bg-elevated);color:var(--fg);border:1px solid var(--border)}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(13,15,18,0.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-subtle);padding:1rem 1.5rem}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.nav-logo{font-weight:800;font-size:1.25rem;letter-spacing:-0.02em;background:linear-gradient(135deg,var(--accent),#a5c0ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;flex-wrap:wrap;gap:0.5rem}
+.nav-link{padding:0.5rem 1rem;border-radius:var(--radius);font-size:0.875rem;font-weight:500;color:var(--fg-muted);transition:all var(--transition-fast)}
+.nav-link:hover,.nav-link.active{color:var(--accent);background:var(--accent-muted)}
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent),transparent)}
+.timeline-item{position:relative;padding-bottom:2rem;padding-left:1.5rem}
+.timeline-item::before{content:'';position:absolute;left:-11px;top:4px;width:20px;height:20px;border-radius:50%;background:var(--bg);border:2px solid var(--border);transition:all var(--transition)}
+.timeline-item.active::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-glow)}
+.timeline-item:last-child::before{border-color:var(--accent)}
+.timeline-dot{position:absolute;left:-8px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:0;transition:opacity var(--transition)}
+.timeline-item.active .timeline-dot{opacity:1}
+.timeline-content{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem}
+.idea-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;transition:all var(--transition)}
+.idea-card:hover{border-color:rgba(108,140,255,0.2);box-shadow:var(--shadow-card-hover)}
+.idea-card-header{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem}
+.idea-num{font-size:1.5rem;font-weight:800;color:var(--accent);min-width:3rem}
+.idea-name{font-weight:600;flex:1}
+.idea-badges{display:flex;gap:0.5rem;flex-wrap:wrap}
+.expand-icon{color:var(--fg-dim);transition:transform var(--transition-fast)}
+.idea-card.expanded .expand-icon{transform:rotate(180deg)}
+.idea-card-body{max-height:0;overflow:hidden;transition:max-height 0.35s ease}
+.idea-card.expanded .idea-card-body{max-height:3000px}
+.idea-card-body-inner{padding:0 1.25rem 1.25rem;border-top:1px solid var(--border);margin-top:0.5rem}
+.detail-section{margin:1rem 0}
+.detail-section h4{font-size:0.875rem;font-weight:600;color:var(--fg-muted);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem}
+.tag-src{background:var(--accent-muted);color:var(--accent)}
+.tag-my{background:var(--amber-muted);color:var(--amber)}
+.tab-bar{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;overflow-x:auto;padding-bottom:0.5rem}
+.tab-btn{padding:0.5rem 1.25rem;border-radius:var(--radius);font-weight:500;font-size:0.875rem;background:var(--bg-elevated);border:1px solid var(--border);color:var(--fg-muted);cursor:pointer;transition:all var(--transition-fast);white-space:nowrap}
+.tab-btn:hover{border-color:var(--accent);color:var(--accent)}
+.tab-btn.active{background:var(--accent-muted);border-color:var(--accent);color:var(--accent)}
+.tab-panel{display:none}
+.tab-panel.active{display:block;animation:fadeIn 0.2s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.footer{background:var(--bg-elevated);border-top:1px solid var(--border);padding:3rem 1.5rem;text-align:center}
+.footer-content{max-width:1200px;margin:0 auto}
+.tooltip{position:relative}
+.tooltip::after{content:attr(data-tip);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);padding:0.5rem 0.75rem;background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius);font-size:0.75rem;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity var(--transition-fast);z-index:10}
+.tooltip:hover::after{opacity:1}
+.copy-btn{background:none;border:none;color:var(--fg-dim);cursor:pointer;padding:0.25rem;border-radius:var(--radius-sm);transition:all var(--transition-fast);font-size:0.875rem}
+.copy-btn:hover{color:var(--accent);background:var(--accent-muted)}
+.copy-btn.copied{color:var(--success);background:rgba(16,185,129,0.15)}
+.progress-ring{transform:rotate(-90deg)}
+.progress-ring-bg{fill:none;stroke:var(--border);stroke-width:4}
+.progress-ring-fg{fill:none;stroke:var(--accent);stroke-width:4;stroke-linecap:round;transition:stroke-dashoffset 0.5s ease}
+.kbd{background:var(--bg-elevated);border:1px solid var(--border);padding:0.1rem 0.4rem;border-radius:var(--radius-sm);font-family:'JetBrains Mono',monospace;font-size:0.75rem}
+.callout{background:var(--accent-muted);border:1px solid rgba(108,140,255,0.2);border-radius:var(--radius-lg);padding:1.5rem;margin:1.5rem 0}
+.callout-title{font-weight:600;color:var(--accent);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem}
+.callout-amber{background:var(--amber-muted);border-color:rgba(245,158,11,0.2)}
+.callout-amber .callout-title{color:var(--amber)}
+.phase-card{background:linear-gradient(135deg,var(--bg-card),var(--bg-elevated));border:1px solid var(--border);border-radius:var(--radius-xl);padding:2rem;position:relative;overflow:hidden}
+.phase-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--amber))}
+.phase-num{font-size:4rem;font-weight:800;color:rgba(108,140,255,0.08);position:absolute;top:1rem;right:1.5rem;line-height:1}
+.phase-title{font-size:1.5rem;font-weight:700;margin-bottom:1rem}
+.phase-duration{font-size:0.875rem;color:var(--fg-dim);margin-bottom:1.5rem}
+.checklist{list-style:none}
+.checklist li{display:flex;align-items:flex-start;gap:0.75rem;padding:0.5rem 0}
+.checklist input[type=checkbox]{width:1.25rem;height:1.25rem;border:2px solid var(--border);border-radius:var(--radius-sm);appearance:none;cursor:pointer;transition:all var(--transition-fast);flex-shrink:0;position:relative}
+.checklist input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent)}
+.checklist input[type=checkbox]:checked::after{content:'';position:absolute;top:2px;left:5px;width:4px;height:8px;border:solid #0d0f12;border-width:0 2px 2px 0;transform:rotate(45deg)}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="nav-inner">
+<div class="nav-logo">MC Marketplace Guide</div>
+<div class="nav-links">
+<a class="nav-link" href="#overview">Overview</a>
+<a class="nav-link" href="#program">Program</a>
+<a class="nav-link" href="#revenue">Revenue</a>
+<a class="nav-link" href="#technical">Technical</a>
+<a class="nav-link" href="#portfolio">Portfolio</a>
+<a class="nav-link" href="#roadmap">Roadmap</a>
+<a class="nav-link" href="#decision">Decision</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="hero-content">
+<span class="sec-label">Deep Research & Strategy</span>
+<h1>Minecraft Bedrock<br>Marketplace Mastery</h1>
+<p class="lead">Complete research on the Partner Program, revenue reality, technical pipeline, and a 12-month portfolio strategy to get accepted — all backed by 80+ sources.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#portfolio">Start Portfolio Blueprint</a>
+<a class="btn btn-secondary" href="#overview">Read Executive Summary</a>
+</div>
+</div>
+</header>
+
+<section class="section" id="overview">
+<span class="sec-label">Executive Summary</span>
+<h2>The Reality in 60 Seconds</h2>
+<div class="stats-bar">
+<div class="stat"><div class="stat-value">70/30</div><div class="stat-label">Revenue Split (Creator/Microsoft)</div></div>
+<div class="stat"><div class="stat-value">150M+</div><div class="stat-label">Bedrock Monthly Active Users</div></div>
+<div class="stat"><div class="stat-value">$50–$3K</div><div class="stat-label">Realistic First-Year Monthly Range</div></div>
+<div class="stat"><div class="stat-value">6–18 mo</div><div class="stat-label">Time to First Dollar</div></div>
+</div>
+
+<div class="grid grid-2" style="margin-top:2rem">
+<div class="card">
+<h3>✅ What Works</h3>
+<ul style="margin:1rem 0;padding-left:1.5rem;color:var(--fg-muted)">
+<li>Real paying audience (kids + parents with Minecoin balances)</li>
+<li>70% revenue share is industry-standard</li>
+<li>Skills transfer 1:1 to game dev career</li>
+<li>Official tooling (Bridge, Bedrock Editor, Script API) is solid</li>
+<li>Portfolio = shipped products for your resume</li>
+</ul>
+</div>
+<div class="card">
+<h3>⚠️ The Constraints</h3>
+<ul style="margin:1rem 0;padding-left:1.5rem;color:var(--fg-muted)">
+<li>Application windows open/close unpredictably</li>
+<li>No public search API — discovery depends on featuring</li>
+<li>Minecoin economy is locked (no cash-out, no resale)</li>
+<li>Console certification adds weeks per submission</li>
+<li>Most solo creators earn Low–Mid tier first 2 years</li>
+</ul>
+</div>
+</div>
+
+<div class="callout" style="margin-top:2rem">
+<div class="callout-title">🎯 Bottom Line for Your 3-Year Plan</div>
+<p>This is <strong>Phase 1 of your game dev journey</strong>, not the destination. The portfolio you build (5 shipped packs, audience, revenue) is a stronger signal to studios than any tutorial project. Even if rejected, you gain: TypeScript gameplay programming, data-driven design, asset pipelines, live ops, certification experience, and a community. That's a junior-to-mid game dev portfolio in 12 months.</p>
+</div>
+</section>
+
+<section class="section" id="program">
+<span class="sec-label">Program Mechanics</span>
+<h2>Partner Program: How It Actually Works</h2>
+
+<div class="grid grid-2">
+<div class="card">
+<h3>Current Status (July 2026)</h3>
+<div class="badge badge-success" style="margin-bottom:1rem">Applications OPEN</div>
+<p class="muted">Per Generalist Programmer's 2-week-old video. Windows periodically close — <a href="https://www.youtube.com/watch?v=..." target="_blank">ASpecificUsername Short (1.3K views)</a> confirmed closure ~1 year ago. Monitor <code>minecraft.net/marketplace/partners</code> and Creator Discord.</p>
+</div>
+<div class="card">
+<h3>Revenue Model</h3>
+<div class="badge badge-accent" style="margin-bottom:1rem">70% Creator / 30% Microsoft</div>
+<p class="muted">Take-rate on Minecoin purchases. Minecoins ≈ $0.004/coin to creator. Payouts monthly via Partner Center (~$50–$100 threshold). Tax handled via Microsoft vendor system.</p>
+</div>
+<div class="card">
+<h3>Content Types & Price Tiers</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Minecoins</th><th>Creator $</th><th>Build Time</th></tr></thead>
+<tbody>
+<tr><td>Skin Pack</td><td>160–320</td><td>$0.64–$1.28</td><td>1–2 wks</td></tr>
+<tr><td>Texture Pack</td><td>320–660</td><td>$1.28–$2.64</td><td>3–8 wks</td></tr>
+<tr><td>World Template</td><td>490–1,340</td><td>$1.96–$5.36</td><td>6–12 wks</td></tr>
+<tr><td>Add-On Pack</td><td>660–1,720+</td><td>$2.64–$6.88+</td><td>6–16 wks</td></tr>
+<tr><td>Mash-up Pack</td><td>990–2,500+</td><td>$3.96–$10+</td><td>12–24 wks</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card">
+<h3>Application → Publish Flow</h3>
+<ol style="margin:1rem 0;padding-left:1.5rem;color:var(--fg-muted);font-size:0.875rem">
+<li>Prepare 5-pack portfolio + portfolio site</li>
+<li>Submit via Partner Center (MS account required)</li>
+<li>Automated checks (manifest, size, malware, IP scan)</li>
+<li>Human review (2–8 weeks): functionality, performance, policy, UX</li>
+<li>Acceptance → Partner Agreement → Onboarding (1–2 wks)</li>
+<li>First submission → Certification (3–15 days) → Publish</li>
+</ol>
+</div>
+</div>
+
+<h3>Common Rejection Reasons</h3>
+<div class="grid grid-3">
+<div class="card"><strong>Placeholder Assets</strong><br><span class="muted">Unfinished textures, missing variants</span></div>
+<div class="card"><strong>Copyrighted IP</strong><br><span class="muted">Even "inspired by" too close</span></div>
+<div class="card"><strong>Mobile Perf Issues</strong><br><span class="muted">Tick lag, memory leaks, render cost</span></div>
+<div class="card"><strong>Manifest Errors</strong><br><span class="muted">UUID collisions, version mismatches</span></div>
+<div class="card"><strong>No Technical Depth</strong><br><span class="muted">Only texture packs, no scripting/behavior</span></div>
+<div class="card"><strong>Poor UX</strong><br><span class="muted">Confusing, buggy, no tutorial</span></div>
+</div>
+
+<h3 style="margin-top:2rem">Critical Constraints</h3>
+<div class="grid grid-2">
+<div class="card">
+<h4>Platform Dependency</h4>
+<p class="muted">100% income tied to Microsoft policy, Minecoin economy, Bedrock player base. No platform diversification within ecosystem.</p>
+</div>
+<div class="card">
+<h4>Revenue Opacity</h4>
+<p class="muted">No public earnings data. Minecoin→USD not fixed. Partner Center only. Analytics granularity unknown until accepted.</p>
+</div>
+<div class="card">
+<h4>IP License</h4>
+<p class="muted">Microsoft takes distribution license. Creator retains copyright but limited exit options. Cannot sell same content elsewhere.</p>
+</div>
+<div class="card">
+<h4>Market Saturation</h4>
+<p class="muted">1000+ active partners. Discovery = algorithm + featuring. Search is basic keyword/tags.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="revenue">
+<span class="sec-label">Revenue Reality</span>
+<h2>What Creators Actually Earn</h2>
+
+<div class="callout callout-amber">
+<div class="callout-title">📊 Data Sources</div>
+<p>No official earnings reports. Estimates synthesized from: Generalist Programmer video chapters ("What partners actually earn", "Earnings calculator"), Disruptive's Modrinth revenue breakdown (methodology transferable), Modrinth 90%+ rev-share benchmark, comparative platform data (GuessLabs Short), and community anecdotes. All figures are <strong>estimates with wide variance</strong>.</p>
+</div>
+
+<div class="grid grid-4" style="margin-top:1.5rem">
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">LOW</div>
+<div class="phase-title">Low Tier</div>
+<div class="phase-duration">First 6–12 months</div>
+<div class="stat" style="margin:0"><div class="stat-value">$50–$300</div><div class="stat-label">Monthly Gross</div></div>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem;margin-top:1rem">
+<li>1–2 skin packs</li>
+<li>No featuring</li>
+<li>Minimal marketing</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">MID</div>
+<div class="phase-title">Mid Tier</div>
+<div class="phase-duration">Year 1–2</div>
+<div class="stat" style="margin:0"><div class="stat-value">$500–$3K</div><div class="stat-label">Monthly Gross</div></div>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem;margin-top:1rem">
+<li>3–5 packs (mix types)</li>
+<li>Consistent updates</li>
+<li>Occasional featuring</li>
+<li>Social presence</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">HIGH</div>
+<div class="phase-title">High Tier</div>
+<div class="phase-duration">Year 2+ (Studio)</div>
+<div class="stat" style="margin:0"><div class="stat-value">$5K–$25K+</div><div class="stat-label">Monthly Gross</div></div>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem;margin-top:1rem">
+<li>10+ packs</li>
+<li>Mash-ups</li>
+<li>Realms Plus inclusion</li>
+<li>Strong cross-platform brand</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">OUTLIER</div>
+<div class="phase-title">Outlier</div>
+<div class="phase-duration">Top 1%</div>
+<div class="stat" style="margin:0"><div class="stat-value">$50K+</div><div class="stat-label">Monthly Gross</div></div>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem;margin-top:1rem">
+<li>Studio scale (Rasa, Spark)</li>
+<li>Multiple featured hits</li>
+<li>Licensing deals</li>
+</ul>
+</div>
+</div>
+
+<h3 style="margin-top:2rem">Platform Economics Comparison (2019–2026)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Platform</th><th>Creator Split</th><th>Model</th><th>Audience</th><th>Barrier</th></tr></thead>
+<tbody>
+<tr><td><strong>MC Marketplace</strong></td><td>~70%</td><td>Direct sale (Minecoin)</td><td>150M+ MAU (Bedrock)</td><td>Application + Curation</td></tr>
+<tr><td>Roblox</td><td>~70% (post-fees)</td><td>Microtransactions (Robux)</td><td>70M+ DAU</td><td>Open (DevEx req.)</td></tr>
+<tr><td>Fortnite UEFN</td><td>~40%</td><td>Engagement payout</td><td>230M+ MAU</td><td>Open (payout application)</td></tr>
+<tr><td>Core</td><td>~50%</td><td>Microtransactions</td><td>~5M MAU</td><td>Open</td></tr>
+<tr><td>Modrinth (Java)</td><td>90%+</td><td>Donations/Ads</td><td>~10M MAU</td><td>Open</td></tr>
+<tr><td>Steam Workshop</td><td>Varies / 0%</td><td>Free mods / Paid games</td><td>130M+ MAU</td><td>Open</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="muted" style="margin-top:1rem"><strong>Key Insight:</strong> Marketplace has highest entry friction but a captive paying audience (kids/parents with Minecoin balances). Roblox/UEFN have larger creator bases but far more competition for attention.</p>
+
+<h3 style="margin-top:2rem">Discovery Channels (Ranked by Impact)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Channel</th><th>Control</th><th>Conversion</th><th>Effort</th><th>Strategy</th></tr></thead>
+<tbody>
+<tr><td>Marketplace Feature (Hero/Category)</td><td>None (curated)</td><td>Very High</td><td>Portfolio quality</td><td>Build feature-worthy packs; request via Partner Center</td></tr>
+<tr><td>Marketplace Search/Charts</td><td>Partial (metadata)</td><td>Medium</td><td>Ongoing</td><td>Optimize title, tags, description, screenshots</td></tr>
+<tr><td>YouTube/TikTok/Shorts (Own)</td><td>Full</td><td>High</td><td>High</td><td>Devlogs, tutorials, showcases, behind-the-scenes</td></tr>
+<tr><td>Creator Collaborations</td><td>Partial</td><td>Medium-High</td><td>Medium</td><td>Cross-packs, bundles, joint videos</td></tr>
+<tr><td>Planet Minecraft / MCPEDL</td><td>Full</td><td>Low-Medium</td><td>Low-Medium</td><td>Free teasers → Marketplace links</td></tr>
+<tr><td>Discord/Reddit Communities</td><td>Partial</td><td>Low</td><td>Medium</td><td>Engage authentically; share process</td></tr>
+<tr><td>Affiliate Links (New Program)</td><td>Full</td><td>Trackable</td><td>Low</td><td>Add to all video descriptions, social bios</td></tr>
+<tr><td>Realms Plus Inclusion</td><td>Negotiated</td><td>Recurring</td><td>High</td><td>Relationship-based; premium content</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section" id="technical">
+<span class="sec-label">Technical Pipeline</span>
+<h2>Bedrock Add-On Development: Tools & Workflow</h2>
+
+<div class="grid grid-3" style="margin-bottom:2rem">
+<div class="card">
+<h4>🏗️ Bridge (VS Code)</h4>
+<p class="muted">Gold standard IDE. JSON schema validation, auto-complete, pack export, debugging. <strong>Required.</strong></p>
+</div>
+<div class="card">
+<h4>🎨 Blockbench</h4>
+<p class="muted">3D modeling for entities/blocks. Exports .geo.json + texture atlases. Web & Electron.</p>
+</div>
+<div class="card">
+<h4>📝 Bedrock Editor</h4>
+<p class="muted">In-game/standalone visual editor for blocks, entities, items, recipes. Good for prototyping.</p>
+</div>
+<div class="card">
+<h4>⚡ Script API (TS/JS)</h4>
+<p class="muted">Custom V8 isolate. <code>@minecraft/server</code> types. 50ms/tick budget. No fs/net/eval.</p>
+</div>
+<div class="card">
+<h4>🔤 Molang</h4>
+<p class="muted">Expression language for animations, render controllers, spawn rules. Critical for advanced packs.</p>
+</div>
+<div class="card">
+<h4>🧪 Testing Matrix</h4>
+<p class="muted">Win10/11, Android (ADB), iOS (TestFlight), Xbox (Dev Mode), Switch/PS (Partner cert).</p>
+</div>
+</div>
+
+<h3>Pack Anatomy</h3>
+<div class="grid grid-2">
+<div class="card">
+<h4>Resource Pack (Client)</h4>
+<pre class="mono" style="background:var(--bg-elevated);padding:1rem;border-radius:var(--radius);overflow-x:auto;font-size:0.75rem;line-height:1.6"><span style="color:var(--accent)">textures/</span>
+  blocks/, items/, entity/, particle/, ui/, models/
+<span style="color:var(--accent)">models/</span>
+  blocks/, entities/  (<span style="color:var(--amber)">.geo.json</span>)
+<span style="color:var(--accent)">materials/</span> (<span style="color:var(--amber)">.material</span>)
+<span style="color:var(--accent)">render_controllers/</span>
+<span style="color:var(--accent)">animations/</span> (<span style="color:var(--amber)">.animation.json</span>)
+<span style="color:var(--accent)">sounds/</span> (<span style="color:var(--amber)">.ogg</span> + definitions)
+<span style="color:var(--accent)">texts/</span> (lang files)
+<span style="color:var(--accent)">manifest.json</span> (type: <span style="color:var(--success)">"resources"</span>)</pre>
+</div>
+<div class="card">
+<h4>Behavior Pack (Server)</h4>
+<pre class="mono" style="background:var(--bg-elevated);padding:1rem;border-radius:var(--radius);overflow-x:auto;font-size:0.75rem;line-height:1.6"><span style="color:var(--accent)">entities/</span> (<span style="color:var(--amber)">.json</span> components, events)
+<span style="color:var(--accent)">blocks/</span> (<span style="color:var(--amber)">.json</span> components, permutations)
+<span style="color:var(--accent)">items/, recipes/, loot_tables/</span>
+<span style="color:var(--accent)">trade_tables/, structures/</span> (<span style="color:var(--amber)">.mcstructure</span>)
+<span style="color:var(--accent)">biomes/, features/, spawn_rules/</span>
+<span style="color:var(--accent)">scripts/</span> (<span style="color:var(--success)">main.ts</span> → compiled JS)
+<span style="color:var(--accent)">manifest.json</span> (type: <span style="color:var(--success)">"data"</span>)</pre>
+</div>
+</div>
+
+<h3 style="margin-top:2rem">Certification Pipeline</h3>
+<div class="timeline">
+<div class="timeline-item active">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<strong>1. Automated Checks</strong><br>
+<span class="muted">Manifest schema, file sizes, malware scan, texture limits, script syntax, banned APIs, UUID collisions, dependency resolution</span>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<strong>2. Human QA</strong><br>
+<span class="muted">Functionality (crashes, errors), Performance (mobile tick lag, memory, render), Policy (IP, content, misleading), UX (tutorial, controls, progression), Compatibility (Preview, vanilla conflicts)</span>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<strong>3. Decision</strong><br>
+<span class="muted">3–15 business days. Rejection = detailed report with logs/screenshots. Fix → resubmit (re-queues). Approval → Pending Release → choose date.</span>
+</div>
+</div>
+</div>
+
+<h3 style="margin-top:2rem">Common Technical Pitfalls</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Pitfall</th><th>Cause</th><th>Prevention</th></tr></thead>
+<tbody>
+<tr><td>UUID Collision</td><td>Copying manifest without regenerating UUIDs</td><td><code>bridge new</code> or <code>uuidgen</code> for every pack</td></tr>
+<tr><td>Missing Textures</td><td>Relative path errors, case sensitivity</td><td>Validate with Bridge; test on Linux/Android</td></tr>
+<tr><td>Script Crashes</td><td>Uncaught exceptions, banned APIs, tick overflow</td><td>Try/catch all handlers; profile tick time</td></tr>
+<tr><td>Mobile OOM</td><td>Large textures, too many entities, leaks</td><td>Texture atlases; pool entities; <code>/script profiler</code></td></tr>
+<tr><td>Manifest Version Stuck</td><td>Forgetting to bump version</td><td>CI/CD script auto-bumps on build</td></tr>
+<tr><td>Preview Breakage</td><td>Using experimental APIs without gating</td><td><code>#if MINECRAFT_PREVIEW</code> guards</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="section" id="portfolio">
+<span class="sec-label">Portfolio Strategy</span>
+<h2>The 5-Pack Portfolio Blueprint (6–9 Months)</h2>
+
+<p class="lead">Designed to prove <strong>technical range + polish + commercial viability</strong> — exactly what reviewers look for. Two art tracks run parallel; scripting is sequential bottleneck.</p>
+
+<div class="tab-bar" role="tablist">
+<button class="tab-btn active" role="tab" data-tab="overview">Overview</button>
+<button class="tab-btn" role="tab" data-tab="pack1">Pack 1: Skins</button>
+<button class="tab-btn" role="tab" data-tab="pack2">Pack 2: Textures</button>
+<button class="tab-btn" role="tab" data-tab="pack3">Pack 3: Scripted</button>
+<button class="tab-btn" role="tab" data-tab="pack4">Pack 4: Adventure</button>
+<button class="tab-btn" role="tab" data-tab="pack5">Pack 5: Capstone</button>
+<button class="tab-btn" role="tab" data-tab="dossier">Dossier Format</button>
+<button class="tab-btn" role="tab" data-tab="site">Portfolio Site</button>
+</div>
+
+<div class="tab-panel active" id="tab-overview" role="tabpanel">
+<div class="grid grid-2">
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">1–3</div>
+<div class="phase-title">Weeks 1–3</div>
+<div class="phase-duration">Parallel: Skin Pack #1</div>
+<ul style="color:var(--fg-muted);font-size:0.875rem;padding-left:1.25rem">
+<li>12 themed skins (6 classic + 6 slim)</li>
+<li>3 variants each = 36 files</li>
+<li>Pixel art, manifest, packaging</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">3–8</div>
+<div class="phase-title">Weeks 3–8</div>
+<div class="phase-duration">Parallel: Texture Pack #1</div>
+<ul style="color:var(--fg-muted);font-size:0.875rem;padding-left:1.25rem">
+<li>Full 64× reskin + 3 custom models</li>
+<li>Geometry, materials, render controllers</li>
+<li>Cohesive visual language</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">9–16</div>
+<div class="phase-title">Weeks 9–16</div>
+<div class="phase-duration">Scripted Add-On #1</div>
+<ul style="color:var(--fg-muted);font-size:0.875rem;padding-left:1.25rem">
+<li>1 custom entity + 1 custom block + 1 mechanic</li>
+<li>Script API (TS), Molang, components, events</li>
+<li>Tick budget profiling, testing</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">17–26</div>
+<div class="phase-title">Weeks 17–26</div>
+<div class="phase-duration">Adventure Map #1</div>
+<ul style="color:var(--fg-muted);font-size:0.875rem;padding-left:1.25rem">
+<li>30–45 min focused experience</li>
+<li>Commands/functions, NPCs, loot, progression</li>
+<li>Playtest report, pacing</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">27–40</div>
+<div class="phase-title">Weeks 27–40</div>
+<div class="phase-duration">Capstone Mini Mash-up</div>
+<ul style="color:var(--fg-muted);font-size:0.875rem;padding-left:1.25rem">
+<li>Themed world + 32× texture + 2 skins + 1 script</li>
+<li>Integration test of all skills</li>
+<li>Project management, performance budget</li>
+</ul>
+</div>
+<div class="card phase-card" style="padding:1.5rem">
+<div class="phase-num">40–44</div>
+<div class="phase-title">Weeks 40–44</div>
+<div class="phase-duration">Polish & Submit</div>
+<ul style="color:var(--fg-muted);font-size:0.875rem;padding-left:1.25rem">
+<li>All dossiers, portfolio site, trailers</li>
+<li>Test matrix (mobile/console/PC)</li>
+<li>Partner Center account, legal/tax</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-pack1" role="tabpanel">
+<div class="card" style="margin-top:1rem">
+<h3>Pack 1: Themed Skin Pack</h3>
+<p class="muted"><strong>Timeline:</strong> Weeks 1–3 | <strong>Type:</strong> Resource Pack only | <strong>Price:</strong> 160–320 Minecoins</p>
+<h4>Theme Selection (Pick 1)</h4>
+<div class="grid grid-3" style="margin:1rem 0">
+<div class="card tooltip" data-tip="Underserved niche: sci-fi utility wear"><strong>Retro-Future Workers</strong><br><span class="muted">Hazmat, exosuits, technicians</span></div>
+<div class="card tooltip" data-tip="Folklore cryptozoology angle"><strong>Cryptid Hunters</strong><br><span class="muted">Mothman, Jersey Devil, Chupacabra gear</span></div>
+<div class="card tooltip" data-tip="Eco-punk aesthetic, solar punk"><strong>Eco-Engineers</strong><br><span class="muted">Terraformers, bio-monitors, rewilders</span></div>
+</div>
+<h4>Technical Checklist</h4>
+<ul style="padding-left:1.25rem;color:var(--fg-muted)">
+<li>64×64 classic + 64×32 slim variants for each skin</li>
+<li>Outer layer (hat, jacket, accessories) utilized</li>
+<li><code>skins.json</code> with localization names, geometry refs, texture paths</li>
+<li>Manifest: type "resources", unique module UUID, header UUID</li>
+<li>Test on Steve/Alex models; verify no Z-fighting</li>
+</ul>
+<h4>What This Proves</h4>
+<p class="muted">Pixel art consistency, manifest correctness, slim/classic handling, packaging discipline, commercial theme sense.</p>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-pack2" role="tabpanel">
+<div class="card" style="margin-top:1rem">
+<h3>Pack 2: 64× Texture Pack</h3>
+<p class="muted"><strong>Timeline:</strong> Weeks 3–8 (parallel) | <strong>Type:</strong> Resource Pack | <strong>Price:</strong> 320–660 Minecoins</p>
+<h4>Theme Selection (Pick 1)</h4>
+<div class="grid grid-3" style="margin:1rem 0">
+<div class="card tooltip" data-tip="Paper craft aesthetic, folded edges"><strong>Paper Craft</strong><br><span class="muted">Origami blocks, crease lines, flat shading</span></div>
+<div class="card tooltip" data-tip="Cyberpunk, emissive maps, neon"><strong>Neon Noir</strong><br><span class="muted">Glowing signs, rain-slick surfaces, holograms</span></div>
+<div class="card tooltip" data-tip="Giger-esque, organic-mechanical"><strong>Biomechanical</strong><br><span class="muted">Veins, chitin, pulsing organs as blocks</span></div>
+</div>
+<h4>Technical Scope</h4>
+<ul style="padding-left:1.25rem;color:var(--fg-muted)">
+<li>All vanilla blocks/items retextured at 64× (or 128× for hero blocks)</li>
+<li>3+ custom block models via Blockbench (.geo.json + UV atlas)</li>
+<li>Custom materials: emissive, transparency, animated textures</li>
+<li>Render controllers for state-based variants (e.g., powered/unpowered)</li>
+<li>Connected textures (CTM) via model permutations where feasible</li>
+</ul>
+<h4>What This Proves</h4>
+<p class="muted">Texture artistry at scale, geometry system mastery, material/render pipeline, performance awareness (texture atlases, mipmaps), cohesive art direction.</p>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-pack3" role="tabpanel">
+<div class="card" style="margin-top:1rem">
+<h3>Pack 3: Scripted Micro-Add-On</h3>
+<p class="muted"><strong>Timeline:</strong> Weeks 9–16 | <strong>Type:</strong> Behavior + Resource + Scripts | <strong>Price:</strong> 660–1,720+ Minecoins</p>
+<h4>Concept Selection (Pick 1)</h4>
+<div class="grid grid-3" style="margin:1rem 0">
+<div class="card tooltip" data-tip="Physics-based grapple, cooldown, particle trail"><strong>Grappling Hook</strong><br><span class="muted">Raycast, velocity, custom item, UI cooldown</span></div>
+<div class="card tooltip" data-tip="Portable crafting table + furnace + storage"><strong>Portable Workbench</strong><br><span class="muted">Custom block entity, container UI, NBT storage</span></div>
+<div class="card tooltip" data-tip="Tamagotchi-style companion, feeding, abilities"><strong>Pet Companion</strong><br><span class="muted">Custom entity, AI goals, growth stages, commands</span></div>
+</div>
+<h4>Technical Requirements</h4>
+<ul style="padding-left:1.25rem;color:var(--fg-muted)">
+<li>TypeScript entry: <code>scripts/main.ts</code> → compiled to <code>scripts/main.js</code></li>
+<li>Custom entity: components (health, movement, behavior), events, animation controller</li>
+<li>Custom block: components (permutations, interaction), block entity for storage</li>
+<li>Molang in animations/render controllers for dynamic visuals</li>
+<li>UI: custom screen via <code>@minecraft/server-ui</code> (ActionFormData, MessageFormData)</li>
+<li>Tick profiling: <code>system.runInterval</code> with <code>Date.now()</code> guards; stay <50ms</li>
+</ul>
+<h4>What This Proves</h4>
+<p class="muted">Script API fluency, component architecture, event-driven design, tick budget discipline, UI/UX for gameplay, testing methodology.</p>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-pack4" role="tabpanel">
+<div class="card" style="margin-top:1rem">
+<h3>Pack 4: Adventure Map</h3>
+<p class="muted"><strong>Timeline:</strong> Weeks 17–26 | <strong>Type:</strong> World Template + Behavior Pack | <strong>Price:</strong> 490–1,340 Minecoins</p>
+<h4>Concept Selection (Pick 1)</h4>
+<div class="grid grid-3" style="margin:1rem 0">
+<div class="card tooltip" data-tip="Redstone logic, observation, timing"><strong>Puzzle Dungeon</strong><br><span class="muted">3–5 distinct mechanics, escalating complexity</span></div>
+<div class="card tooltip" data-tip="Momentum, precision, checkpoint system"><strong>Parkour Tower</strong><br><span class="muted">Vertical progression, 8–12 themed floors</span></div>
+<div class="card tooltip" data-tip="Branching dialogue, choices, multiple endings"><strong>Narrative Mystery</strong><br><span class="muted">NPC investigation, clue system, 3 endings</span></div>
+</div>
+<h4>Technical Scope</h4>
+<ul style="padding-left:1.25rem;color:var(--fg-muted)">
+<li>World built in Bedrock Editor → export via Structure Blocks (.mcstructure)</li>
+<li>Behavior pack: function files (.mcfunction) for progression, commands for mechanics</li>
+<li>NPCs with dialogue trees, command triggers, reward dispensing</li>
+<li>Loot tables for chests/rewards; trade tables for vendors</li>
+<li>Scoreboard/objectives for progression tracking</li>
+<li>Playtest report: 3+ testers, completion times, stuck points, fun ratings</li>
+</ul>
+<h4>What This Proves</h4>
+<p class="muted">Level design, pacing, command/function mastery, player onboarding without tutorials, replayability design, QA process.</p>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-pack5" role="tabpanel">
+<div class="card" style="margin-top:1rem">
+<h3>Pack 5: Capstone Mini Mash-up</h3>
+<p class="muted"><strong>Timeline:</strong> Weeks 27–40 | <strong>Type:</strong> World + Texture (32×) + 2 Skins + 1 Scripted System | <strong>Price:</strong> 990–2,500+ Minecoins</p>
+<h4>Integration Challenge</h4>
+<p class="muted">This is the <strong>final exam</strong>. Everything must work together without conflicts:</p>
+<ul style="padding-left:1.25rem;color:var(--fg-muted)">
+<li>World depends on custom blocks/entities from behavior pack</li>
+<li>Texture pack reskins vanilla + custom blocks consistently</li>
+<li>Skins match world theme (NPCs use same palette)</li>
+<li>Scripted system integrated into world progression (not tacked on)</li>
+<li>Performance budget: <30ms tick on mobile, <100MB RAM</li>
+</ul>
+<h4>Project Management</h4>
+<div class="grid grid-2" style="margin:1rem 0">
+<div class="card"><strong>Notion/GitHub Projects Board</strong><br><span class="muted">Epics: World, Texture, Skins, Script, Integration, Polish, Test, Docs</span></div>
+<div class="card"><strong>Weekly Milestones</strong><br><span class="muted">W27-28: World blockout | W29-32: Systems | W33-36: Art pass | W37-38: Integration | W39-40: Polish</span></div>
+</div>
+<h4>What This Proves</h4>
+<p class="muted">End-to-end delivery, cross-system integration, performance budgeting, commercial polish, project management, scope control.</p>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-dossier" role="tabpanel">
+<div class="card" style="margin-top:1rem">
+<h3>Project Dossier Template (Per Pack)</h3>
+<p class="muted">Each pack gets a 1-page PDF + web modal. Reviewers spend ~2 min per project.</p>
+<pre class="mono" style="background:var(--bg-elevated);padding:1rem;border-radius:var(--radius);overflow-x:auto;font-size:0.75rem;line-height:1.8;white-space:pre-wrap"><span style="color:var(--accent)">[Project Name]</span> — <span style="color:var(--amber)">[Type]</span> — <span style="color:var(--success)">[Engine Version]</span>
+├── <span style="color:var(--accent)">Tagline</span> (1 sentence, player-facing value)
+├── <span style="color:var(--accent)">Trailer</span> (60–90 sec, YouTube unlisted link)
+├── <span style="color:var(--accent)">Screenshots</span> (5–8, 1920×1080, curated for Marketplace)
+├── <span style="color:var(--accent)">Feature List</span> (bulleted, player-facing, no jargon)
+├── <span style="color:var(--accent)">Tech Stack Badges</span>
+│   ├── Resource Pack ●●●●○
+│   ├── Behavior Pack ●●●○○
+│   ├── Script API ●●○○○
+│   ├── Molang ●●○○○
+│   ├── Blockbench ●●●○○
+│   └── Bridge ●●●●○
+├── <span style="color:var(--accent)">Dev Time</span> (calendar weeks, honest)
+├── <span style="color:var(--accent)">Test Report</span>
+│   ├── Devices: Win10, Android, iOS, Xbox
+│   ├── Tick Perf: Avg 12ms / Peak 28ms
+│   ├── Memory: 42MB peak
+│   └── Known Issues: (none / listed)
+├── <span style="color:var(--accent)">Design Doc</span> (Notion/GitHub — 2–3 pages: concept, mechanics, audience)
+├── <span style="color:var(--accent)">Source Access</span> (GitHub repo — private, invite reviewers)
+└── <span style="color:var(--accent)">Marketplace-Ready Checklist</span> ✓
+    ├── Manifest valid (UUIDs, versions, deps)
+    ├── No missing textures / broken refs
+    ├── Script compiles, no console errors
+    ├── Tested on 4+ device tiers
+    ├── Original IP verified
+    └── Trailer + screenshots meet guidelines</pre>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-site" role="tabpanel">
+<div class="card" style="margin-top:1rem">
+<h3>Portfolio Site Structure (Single Page)</h3>
+<div class="grid grid-2">
+<div class="card">
+<h4>Sections</h4>
+<ul style="padding-left:1.25rem;color:var(--fg-muted)">
+<li><strong>Hero:</strong> "Minecraft Bedrock Creator Portfolio — [Name]"</li>
+<li><strong>About:</strong> 3 lines: focus, experience, goal</li>
+<li><strong>Projects Grid:</strong> 5 cards → click → Dossier modal</li>
+<li><strong>Skills:</strong> Visual bars (Resource Pack ●●●●○, Script API ●●○○○, etc.)</li>
+<li><strong>Process:</strong> 3-step: Design → Build → Polish</li>
+<li><strong>Contact:</strong> Email, Discord, Partner Center ID</li>
+<li><strong>Blog/Devlog:</strong> 3 latest posts</li>
+</ul>
+</div>
+<div class="card">
+<h4>Tech Stack</h4>
+<ul style="padding-left:1.25rem;color:var(--fg-muted)">
+<li>GitHub Pages (free, custom domain)</li>
+<li>Astro / Next.js / Hugo / 11ty</li>
+<li>Or Notion + Super.so (fastest launch)</li>
+<li>Custom domain: <code>yourname-mc.dev</code></li>
+<li>Analytics: Plausible / Umami (privacy-first)</li>
+</ul>
+</div>
+</div>
+<h4>Content Calendar (Start Week 1)</h4>
+<div class="grid grid-3" style="margin:1rem 0">
+<div class="card"><strong>YouTube</strong><br><span class="muted">1 devlog/week (8–12 min)</span></div>
+<div class="card"><strong>Shorts/Reels/TikTok</strong><br><span class="muted">3 clips/week (30 sec)</span></div>
+<div class="card"><strong>Twitter/X</strong><br><span class="muted">5 posts/week + engagement</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="roadmap">
+<span class="sec-label">3-Year Roadmap</span>
+<h2>Phase-Gated Plan: From Zero to Game Dev</h2>
+
+<div class="grid grid-3">
+<div class="card phase-card">
+<div class="phase-num">01</div>
+<div class="phase-title">Foundation & Portfolio</div>
+<div class="phase-duration">Months 1–12</div>
+<h4>Goal: Partner-ready portfolio + audience foundation</h4>
+<table style="font-size:0.8rem;width:100%">
+<thead><tr><th>Month</th><th>Technical</th><th>Creative</th><th>Business</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>Bridge, Blockbench, Resource Pack basics</td><td>Skin Pack #1 (12 skins)</td><td>Partner Center account, domain, content calendar</td></tr>
+<tr><td>3–4</td><td>Texture Pack, custom models, geometry</td><td>Texture Pack #1 (64×)</td><td>YouTube/TikTok launch, weekly devlogs</td></tr>
+<tr><td>5–6</td><td>Script API, Molang, custom components</td><td>Scripted Add-On #1 (micro-mechanic)</td><td>Planet Minecraft uploads, Discord community</td></tr>
+<tr><td>7–8</td><td>Commands, structures, NPCs, progression</td><td>Adventure Map #1 (30–45 min)</td><td>Mid-tier YouTuber outreach, affiliate links</td></tr>
+<tr><td>9–10</td><td>Integration, performance, polish</td><td>Capstone Mini Mash-up</td><td>Portfolio site complete, all dossiers ready</td></tr>
+<tr><td>11</td><td>Test matrix, bug bash</td><td>Final polish, trailers, screenshots</td><td>Application prep, legal/tax review</td></tr>
+<tr><td>12</td><td colspan="3"><strong>SUBMIT APPLICATION</strong> — Monitor application windows</td></tr>
+</tbody>
+</table>
+<div class="badge badge-success" style="margin-top:1rem">Success: 5 dossiers, site live, 1K+ followers, submitted</div>
+</div>
+
+<div class="card phase-card">
+<div class="phase-num">02</div>
+<div class="phase-title">Partner Onboarding</div>
+<div class="phase-duration">Months 13–24</div>
+<h4>Goal: First $1K/mo sustainable</h4>
+<table style="font-size:0.8rem;width:100%">
+<thead><tr><th>Month</th><th>Focus</th></tr></thead>
+<tbody>
+<tr><td>13–15</td><td>Application decision; if rejected → implement feedback → reapply</td></tr>
+<tr><td>16–18</td><td>Certification of first 2–3 packs; launch coordination</td></tr>
+<tr><td>19–21</td><td>Marketing push; seasonal updates; community engagement</td></tr>
+<tr><td>22–24</td><td>Analyze sales data; double down on best type; pitch featuring</td></tr>
+</tbody>
+</table>
+<div class="badge badge-accent" style="margin-top:1rem">Success: 3+ live packs, $500+/mo, featured once, 5K+ followers</div>
+</div>
+
+<div class="card phase-card">
+<div class="phase-num">03</div>
+<div class="phase-title">Studio Track & Transition</div>
+<div class="phase-duration">Months 25–36</div>
+<h4>Choose Your Path</h4>
+<div class="grid grid-2" style="margin-top:1rem">
+<div class="card">
+<h5>🎮 Creator Studio</h5>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem">
+<li>Hire 1–2 contractors</li>
+<li>Pipeline 2 mash-ups/year</li>
+<li>Realms Plus negotiation</li>
+<li>Brand expansion (merch, Discord, Patreon)</li>
+</ul>
+</div>
+<div class="card">
+<h5>💼 Game Dev Job</h5>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem">
+<li>Portfolio = 5+ shipped MC packs</li>
+<li>+ audience + revenue = strong signal</li>
+<li>Apply: Mojang, Roblox, indie, AA studios</li>
+<li>Negotiate with shipped product proof</li>
+</ul>
+</div>
+<div class="card">
+<h5>🚀 Own Game</h5>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem">
+<li>Prototype in Godot/Unity</li>
+<li>Leverage MC skills (data-driven, live ops)</li>
+<li>Kickstarter/publisher with proven audience</li>
+<li>Retain 100% IP</li>
+</ul>
+</div>
+<div class="card">
+<h5>🔀 Hybrid</h5>
+<ul style="font-size:0.8rem;color:var(--fg-muted);padding-left:1.25rem">
+<li>Part-time studio + MC income</li>
+<li>De-risk transition</li>
+<li>Build network inside industry</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="decision">
+<span class="sec-label">Decision Framework</span>
+<h2>Go / No-Go: Should You Do This?</h2>
+
+<div class="grid grid-2">
+<div class="card">
+<h3>✅ Proceed If...</h3>
+<ul style="padding-left:1.25rem;line-height:2">
+<li>You enjoy pixel art / low-poly modeling / technical art</li>
+<li>You can commit 10–15 hrs/week for 12 months</li>
+<li>You want <strong>shipped products</strong> on your resume, not just tutorials</li>
+<li>You're comfortable with "hurry up and wait" certification cycles</li>
+<li>You see this as <strong>Phase 1 of 3-year game dev plan</strong>, not the destination</li>
+<li>You're willing to market yourself (YouTube/TikTok required)</li>
+<li>You like constrained creativity (Bedrock limits force clever solutions)</li>
+</ul>
+</div>
+<div class="card">
+<h3>❌ Reconsider If...</h3>
+<ul style="padding-left:1.25rem;line-height:2">
+<li>You need income in <6 months</li>
+<li>You hate Microsoft ecosystems / closed platforms</li>
+<li>You only want to code (no art/design)</li>
+<li>You expect Steam-like discoverability</li>
+<li>You're not willing to show your face/voice online</li>
+<li>You want 100% creative freedom (no policy review)</li>
+<li>You prefer open-source / community-first ethos</li>
+</ul>
+</div>
+</div>
+
+<h3 style="margin-top:2rem">Risk-Adjusted Scenarios (12-Month Horizon)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Scenario</th><th>Probability</th><th>Outcome</th><th>Your Action</th></tr></thead>
+<tbody>
+<tr><td>A. Accepted first try</td><td>15–25%</td><td>Partner in Month 12; first $ in Month 13–14</td><td>Execute launch plan</td></tr>
+<tr><td>B. Rejected once, accepted 2nd</td><td>35–45%</td><td>Partner in Month 16–18; feedback improves portfolio</td><td>Implement feedback; reapply</td></tr>
+<tr><td>C. Multiple rejections / Program closes</td><td>20–30%</td><td>Delay 6–18 months; build audience meanwhile</td><td>Pivot to audience-first; affiliate income</td></tr>
+<tr><td>D. Never accepted / Program ends</td><td>10–15%</td><td>Skills transfer to Roblox/UEFN/Unity/Godot</td><td>Leverage portfolio for game dev jobs</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout" style="margin-top:2rem">
+<div class="callout-title">💡 Key Insight</div>
+<p>Even in worst-case Scenario D, you walk away with: <strong>5 shipped Bedrock products, a portfolio site, 1K+ social followers, TypeScript gameplay programming experience, data-driven design skills, asset pipeline knowledge, live ops experience, certification/QA process familiarity, and a community.</strong> That's a junior-to-mid level game developer portfolio. The <strong>downside is capped; the upside is uncapped.</strong></p>
+</div>
+</section>
+
+<section class="section">
+<span class="sec-label">Immediate Actions</span>
+<h2>Your Week 1 Checklist</h2>
+
+<div class="card" style="max-width:800px;margin:0 auto">
+<form id="checklist-form">
+<div class="checklist">
+<label><input type="checkbox" data-step="1"> <strong>Watch:</strong> Generalist Programmer's "How to ACTUALLY Get Accepted" (9 min) — timestamp portfolio requirements</label>
+<label><input type="checkbox" data-step="2"> <strong>Install:</strong> VS Code + Bridge extension + Blockbench 4.x</label>
+<label><input type="checkbox" data-step="3"> <strong>Complete:</strong> "Getting Started with Add-On Development" on learn.microsoft.com/minecraft/creator</label>
+<label><input type="checkbox" data-step="4"> <strong>Choose:</strong> Skin Pack #1 theme (3 options, pick 1 by Friday)</label>
+<label><input type="checkbox" data-step="5"> <strong>Create:</strong> GitHub repo <code>mc-portfolio-skinpack-01</code> with Bridge scaffold</label>
+<label><input type="checkbox" data-step="6"> <strong>Register:</strong> Domain <code>yourname-mc.dev</code> + GitHub Pages</label>
+<label><input type="checkbox" data-step="7"> <strong>Create:</strong> Content calendar — 1 YouTube/week, 3 Shorts/week, 5 Tweets/week</label>
+<label><input type="checkbox" data-step="8"> <strong>Join:</strong> Minecraft Creator Discord (link on learn.microsoft.com/minecraft/creator)</label>
+<label><input type="checkbox" data-step="9"> <strong>Bookmark:</strong> Application portal — watch for "Apply Now" button</label>
+<label><input type="checkbox" data-step="10"> <strong>Schedule:</strong> 3 recurring calendar blocks "MC Portfolio Build" (Mon/Wed/Fri 2hrs)</label>
+</div>
+</form>
+<div style="margin-top:1.5rem;text-align:center">
+<button class="btn btn-primary" type="button" onclick="saveChecklist()">Save Progress to LocalStorage</button>
+<button class="btn btn-secondary" type="button" onclick="loadChecklist()">Load Progress</button>
+<button class="btn btn-secondary" type="button" onclick="clearChecklist()">Clear</button>
+</div>
+<div id="progress-bar" style="margin-top:1rem;height:8px;background:var(--bg-elevated);border-radius:4px;overflow:hidden">
+<div id="progress-fill" style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--amber));transition:width 0.3s ease"></div>
+</div>
+<div id="progress-text" style="text-align:center;margin-top:0.5rem;color:var(--fg-muted);font-size:0.875rem">0/10 completed</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-content">
+<p class="muted">Minecraft Bedrock Marketplace — Complete Research & Strategy Guide</p>
+<p class="muted" style="margin-top:0.5rem">Compiled via Aggregate Deep Research Pipeline v2.0 | 80+ sources | Claim–Source Binding enforced</p>
+<p class="muted" style="margin-top:1rem">Research date: July 2026 | <a href="https://github.com/" target="_blank">Methodology</a> | <a href="#" onclick="exportData()">Export Data (JSON)</a></p>
+</div>
+</footer>
+
+<script>
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Idea card expansion (event delegation)
+document.querySelectorAll('.ideas-grid').forEach(grid=>{
+  grid.addEventListener('click',e=>{
+    if(e.target.closest('.copy-btn')) return;
+    const card=e.target.closest('.idea-card');
+    if(card){card.classList.toggle('expanded');}
+  });
+});
+
+// Copy to clipboard
+function copyCard(btn,text){
+  btn.classList.remove('copied');
+  navigator.clipboard.writeText(text).then(()=>{
+    btn.classList.add('copied');
+    btn.textContent='✓ Copied!';
+    setTimeout(()=>{btn.textContent='📋 Copy';btn.classList.remove('copied');},2000);
+  }).catch(()=>{
+    const ta=document.createElement('textarea');
+    ta.value=text;document.body.appendChild(ta);ta.select();
+    document.execCommand('copy');ta.remove();
+    btn.classList.add('copied');
+    btn.textContent='✓ Copied!';
+    setTimeout(()=>{btn.textContent='📋 Copy';btn.classList.remove('copied');},2000);
+  });
+}
+
+// Checklist persistence
+const STORAGE_KEY='mc-marketplace-checklist';
+function saveChecklist(){
+  const data={};
+  document.querySelectorAll('#checklist-form input[type=checkbox]').forEach((cb,i)=>{
+    data[i]=cb.checked;
+  });
+  localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+  updateProgress();
+}
+function loadChecklist(){
+  const data=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');
+  document.querySelectorAll('#checklist-form input[type=checkbox]').forEach((cb,i)=>{
+    cb.checked=data[i]||false;
+  });
+  updateProgress();
+}
+function clearChecklist(){
+  localStorage.removeItem(STORAGE_KEY);
+  document.querySelectorAll('#checklist-form input[type=checkbox]').forEach(cb=>cb.checked=false);
+  updateProgress();
+}
+function updateProgress(){
+  const total=document.querySelectorAll('#checklist-form input[type=checkbox]').length;
+  const done=document.querySelectorAll('#checklist-form input[type=checkbox]:checked').length;
+  document.getElementById('progress-fill').style.width=(done/total*100)+'%';
+  document.getElementById('progress-text').textContent=`${done}/${total} completed`;
+}
+loadChecklist();
+
+// Smooth scroll for nav links
+document.querySelectorAll('.nav-link').forEach(link=>{
+  link.addEventListener('click',e=>{
+    e.preventDefault();
+    const target=document.querySelector(link.getAttribute('href'));
+    if(target){target.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+
+// Active nav highlighting on scroll
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.nav-link');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(sec=>{
+    const rect=sec.getBoundingClientRect();
+    if(rect.top<=100&&rect.bottom>=100){current=sec.id;}
+  });
+  navLinks.forEach(link=>{
+    link.classList.toggle('active',link.getAttribute('href')==='#'+current);
+  });
+});
+
+// Export all data as JSON
+function exportData(){
+  const data={
+    meta:{title:'MC Marketplace Research',date:'2026-07-17',pipeline:'Aggregate Deep Research v2.0',sources:80},
+    reports:{
+      program:{file:'report-01-partner-program.md',summary:'Partner program mechanics, requirements, application process'},
+      technical:{file:'report-02-technical-pipeline.md',summary:'Add-on development pipeline, content types, certification'},
+      revenue:{file:'report-03-revenue-audience-portfolio.md',summary:'Revenue reality, audience building, portfolio strategy'}
+    },
+    synthesis:{file:'master-synthesis.md',summary:'Cross-report synthesis, 3-year roadmap, decision framework'},
+    portfolioBlueprint:{
+      packs:[
+        {num:1,name:'Themed Skin Pack',weeks:'1-3',type:'Resource',price:'160-320 coins'},
+        {num:2,name:'64× Texture Pack',weeks:'3-8',type:'Resource',price:'320-660 coins'},
+        {num:3,name:'Scripted Micro-Add-On',weeks:'9-16',type:'Behavior+Script',price:'660-1720+ coins'},
+        {num:4,name:'Adventure Map',weeks:'17-26',type:'World+Behavior',price:'490-1340 coins'},
+        {num:5,name:'Capstone Mini Mash-up',weeks:'27-40',type:'Full Bundle',price:'990-2500+ coins'}
+      ],
+      timelineWeeks:44,
+      calendarMonths:11
+    },
+    revenueTiers:{
+      low:{monthly:'$50-300',annual:'$600-3600',packs:'1-2 skins'},
+      mid:{monthly:'$500-3000',annual:'$6000-36000',packs:'3-5 mixed'},
+      high:{monthly:'$5000-25000+',annual:'$60000-300000+',packs:'10+ mashups'},
+      outlier:{monthly:'$50000+',annual:'$600000+',packs:'studio scale'}
+    },
+    roadmap:{
+      phase1:{months:'1-12',goal:'Partner-ready portfolio'},
+      phase2:{months:'13-24',goal:'$1K/mo sustainable'},
+      phase3:{months:'25-36',goal:'Studio track or game dev job'}
+    }
+  };
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;a.download='mc-marketplace-research.json';a.click();
+  URL.revokeObjectURL(url);
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded',()=>{
+  updateProgress();
+});
+</script>
+</body>
+</html>
