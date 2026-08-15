@@ -1,0 +1,50 @@
+{
+  "video_id": "37wRzGdC9w4",
+  "title": "How a Quant would Invest $1,000,000",
+  "url": "https://www.youtube.com/watch?v=37wRzGdC9w4",
+  "channel": "Roman Paolucci (Quant Guild)",
+  "channel_handle": "@QuantGuild",
+  "duration": "7:09",
+  "views": "17K",
+  "upload_date": "2 weeks ago",
+  "subscribers": "89.1K",
+  "extracted_at": "2026-07-21T00:00:00.000000",
+  "extraction_method": "browser",
+  "transcript_status": "MISSING - Subtitles/closed captions unavailable",
+  "chapters": [
+    {"title": "Lazy", "time": "00:00"},
+    {"title": "Conservative", "time": "01:28"},
+    {"title": "Savage", "time": "04:28"},
+    {"title": "Stupid", "time": "06:03"}
+  ],
+  "description": "🚀 Master Quantitative Skills with Quant Guild\nhttps://quantguild.com\n\n🛡️ Learn to Run a Personal Hedge Fund\nhttps://quantguild.com/personal-hedge...\n\n📈 Interactive Brokers for Algorithmic Trading\nhttps://www.interactivebrokers.com/mk...\n\n👾 Join the Quant Guild Discord server here\n  / discord \n___________________________________________\n🪐 Free Jupyter Notebook Library 👇\nhttps://github.com/romanmichaelpaoluc...\n\n👤 Video Setting Up Interactive Brokers 👇\n  • How to Get Historical Market Data with Int...\n\n🔗 How to Read Options Chains 👇\n  • How to Read an Options Chain \n\nTL;DW Executive Summary:\nThis video evaluates four distinct capital allocation strategies for a million-dollar portfolio, contrasting the compounding effects of risk-free assets against equity market exposure and venture-style business growth\nI highlighted that growth is inherently non-linear; by analyzing the mathematical impact of compounding, I demonstrated how shifting from a 4% Treasury yield to a 7.5% market return results in an exponential increase in terminal wealth, illustrating the power of geometric convexity\nI cautioned against the assumption of a persistent market risk premium by citing the \"lost decades\" of the Japanese equity market, emphasizing that past backtests do not guarantee future performance and that investors must understand the specific risk factors to which they are exposed\nI contrasted traditional investment approaches with the potential returns of private equity and entrepreneurship, noting that while top-tier venture management can produce significantly higher compound annual growth rates (CAGR), it requires an acceptance of extreme risk and volatility\nUltimately, I framed the decision-making process as a trade-off between risk, reward, and lifestyle, ultimately satirizing \"reverse retirement\" as a strategy for rapid capital depletion through luxury consumption, while encouraging a disciplined, informed approach to wealth management\n\nI hope you enjoyed, and I hope you learned something!\n\nRoman\n___________________________________________\n📖 Chapters:\n00:00 - Lazy\n01:28 - Conservative \n04:28 - Savage\n06:03 - Stupid\n___________________________________________\n🗣️ Shout Outs\n\nA special thank you to my members on YouTube for supporting my channel and enabling me to continue to create videos just like this one!\n\n⭐ Quant Guild Directors\nDr. Jason Pirozzolo\n___________________________________________\n▶️ Related Videos\n\nQuant Builds 🔨\nHow to Build a Live Volatility Surface in Python (Interactive Brokers)\n  • How to Build a Live Volatility Surface in ...\n\nStatistics and Trading Profitability Over Time (Edge) 📈\n\nTime Series Analysis for Quant Finance\n  • Time Series Analysis for Quant Finance \n\nQuant Trader on Retail vs Institutional Trading\n  • Quant Trader on Retail vs. Institutional T...\n\nQuant on Trading and Investing\n  • Quant on Trading and Investing \n\nWhy Poker Pros Make the Best Traders (It's NOT Luck)\n  • Video \n\nQuant vs. Discretionary Trading\n  • Quant vs. Discretionary Trading \n___________________________________________\n🗂️ Resources\n\n📚 Quant Guild Library:\nhttps://github.com/romanmichaelpaoluc...\n\n🌎 GitHub:\nhttps://github.com/RomanMichaelPaolucci\nhttps://github.com/Quant-Guild\n\n📝 Medium (Blog):\n  / quantguild \n  / quant \n___________________________________________\n🛠️ Projects\n\nThe Gaussian Cookbook:\nhttps://gaussiancookbook.com\n\nRecipes for simulating stochastic processes:\nhttps://papers.ssrn.com/sol3/papers.c...\n___________________________________________\n💬 Socials\n\nTikTok:   / quantguild \n\nInstagram:   / quantguild \n\nX/Twitter: https://x.com/quantguild/\n\nLinkedIn (personal):   / rmp99 \n\nLinkedIn (company):   / quant-guild \n___________________________________________",
+  "links": [
+    "https://quantguild.com",
+    "https://quantguild.com/personal-hedge-fund",
+    "https://www.interactivebrokers.com",
+    "https://discord.com/invite/MJ4FU2c6c3",
+    "https://github.com/romanmichaelpaolucci/Quant-Guild-Library",
+    "https://github.com/RomanMichaelPaolucci",
+    "https://github.com/Quant-Guild",
+    "https://quantguild.medium.com",
+    "https://medium.com/quant-guild",
+    "https://gaussiancookbook.com",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5332011",
+    "https://www.tiktok.com/@quantguild",
+    "https://www.instagram.com/quantguild",
+    "https://x.com/quantguild",
+    "https://www.linkedin.com/in/rmp99",
+    "https://www.linkedin.com/company/quant-guild"
+  ],
+  "related_videos": [
+    {"title": "How to Build a Live Volatility Surface in Python (Interactive Brokers)", "video_id": "7hezNf49iKc"},
+    {"title": "How to Read an Options Chain", "video_id": "RrRbz6oXwxE"},
+    {"title": "How to Get Historical Market Data with Interactive Brokers and Python", "video_id": "37wRzGdC9w4"},
+    {"title": "How to Build a Live Volatility Surface in Python (Interactive Brokers)", "video_id": "5JEeAsQqlro"},
+    {"title": "Time Series Analysis for Quant Finance", "video_id": "JwqjuUnR8OY"},
+    {"title": "Quant Trader on Retail vs. Institutional Trading", "video_id": "j1XAcdEHzbU"},
+    {"title": "Quant on Trading and Investing", "video_id": "CKXp_sMwPuY"},
+    {"title": "Video", "video_id": "wZChBKDFFeU"},
+    {"title": "Quant vs. Discretionary Trading", "video_id": "3gblERSSHXI"}
+  ]
+}

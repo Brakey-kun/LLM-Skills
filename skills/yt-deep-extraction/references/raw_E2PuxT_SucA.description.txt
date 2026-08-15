@@ -1,0 +1,106 @@
+*🚀 Master Quantitative Skills with Quant Guild*
+https://quantguild.com
+
+*🛡️ Learn to Run a Personal Hedge Fund*
+https://quantguild.com/personal-hedge-fund
+
+*📈 Interactive Brokers for Algorithmic Trading*
+https://www.interactivebrokers.com/mkt/?src=quantguildY&url=%2Fen%2Fwhyib%2Foverview.php
+
+*👾 Join the Quant Guild Discord server here*
+https://discord.com/invite/MJ4FU2c6c3
+___________________________________________
+*🪐 Free Jupyter Notebook Library 👇*
+https://github.com/romanmichaelpaolucci/Quant-Guild-Library/tree/main
+
+*👤 Video Setting Up Interactive Brokers 👇*
+https://youtu.be/7hezNf49iKc
+
+*🔗 How to Read Options Chains 👇*
+https://youtu.be/RrRbz6oXwxE
+
+TL;DW Executive Summary:
+* This lecture dismantles the appeal of active stock picking by exposing the mathematical reality of volatility drag, where the gap between arithmetic and geometric returns severely impairs long-term compounding.
+* We detailed how high-volatility stock picking often relies on passive beta exposure rather than true idiosyncratic edge, leaving investors dangerously exposed to systemic drawdowns during market crises.
+* Through simulation and path analysis, we illustrated that investors cannot choose their "sample path," and stock pickers face significantly worse outcomes in the bottom 10% of scenarios—characterized by 80% drawdowns compared to 50% for broad market portfolios.
+* Ultimately, we demonstrated that successful portfolio management requires moving beyond unhedged stock picking toward engineered strategies that incorporate hedge sleeves, allowing for the monetization of volatility and the creation of orthogonal, resilient payoffs.
+
+I hope you enjoyed, and I hope you learned something!
+
+- Roman
+___________________________________________
+*📖 Chapters:*
+00:00 - Stock Picking vs. Casino Gambling: The Math Proof
+00:55 - Why Your "Alpha" is Actually Just Passive Beta
+01:53 - The VRT Case Study: The Hidden Cost of Stock Picking
+04:01 - Volatility Drag: Why Your CAGR is a Lie
+05:50 - The Problem with Random Path Selection
+08:13 - The Quant Reality: Why Your Portfolio Blows Out
+10:02 - The Bottom 10%: Worst-Case Scenario Simulation
+13:54 - How to Improve CAGR (Without Stock Picking)
+14:48 - Engineering a Hedge Sleeve for Long-Term Success
+16:50 - Stop Trading, Start Engineering Risk
+___________________________________________
+*🗣️ Shout Outs*
+
+A special thank you to my members on YouTube for supporting my channel and enabling me to continue to create videos just like this one!
+
+*⭐ Quant Guild Directors*
+Dr. Jason Pirozzolo
+___________________________________________
+*▶️ Related Videos*
+
+*Quant Builds 🔨*
+How to Build a Live Volatility Surface in Python (Interactive Brokers)
+https://youtu.be/5JEeAsQqlro
+
+*Statistics and Trading Profitability Over Time (Edge) 📈*
+
+Time Series Analysis for Quant Finance
+https://youtu.be/JwqjuUnR8OY
+
+Quant Trader on Retail vs Institutional Trading
+https://youtu.be/j1XAcdEHzbU
+
+Quant on Trading and Investing
+https://youtu.be/CKXp_sMwPuY
+
+Why Poker Pros Make the Best Traders (It's NOT Luck)
+https://youtu.be/wZChBKDFFeU
+
+Quant vs. Discretionary Trading
+https://youtu.be/3gblERSSHXI
+___________________________________________
+*🗂️ Resources*
+
+*📚 Quant Guild Library:*
+https://github.com/romanmichaelpaolucci/Quant-Guild-Library
+
+*🌎 GitHub:*
+https://github.com/RomanMichaelPaolucci
+https://github.com/Quant-Guild
+
+*📝 Medium (Blog):*
+https://quantguild.medium.com/
+https://medium.com/quant-guild
+___________________________________________
+*🛠️ Projects*
+
+*The Gaussian Cookbook:*
+https://gaussiancookbook.com
+
+*Recipes for simulating stochastic processes:*
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5332011
+___________________________________________
+*💬 Socials*
+
+*TikTok:* https://www.tiktok.com/@quantguild
+
+*Instagram:* https://www.instagram.com/quantguild/
+
+*X/Twitter:* https://x.com/quantguild/
+
+*LinkedIn (personal):* https://www.linkedin.com/in/rmp99/
+
+*LinkedIn (company):* https://www.linkedin.com/company/quant-guild
+___________________________________________

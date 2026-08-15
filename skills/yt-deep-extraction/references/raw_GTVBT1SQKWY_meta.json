@@ -1,0 +1,26 @@
+{
+  "video_id": "GTVBT1SQKWY",
+  "title": "Math to Increase your Sharpe Ratios",
+  "url": "https://www.youtube.com/watch?v=GTVBT1SQKWY",
+  "duration": "18:14",
+  "channel": "Roman Paolucci",
+  "channel_handle": "@QuantGuild",
+  "subscribers": "88.6K",
+  "views": "unknown (page shows 100 likes)",
+  "upload_date": "unknown",
+  "description": "🚀 Master Quantitative Skills with Quant Guild\nhttps://quantguild.com",
+  "chapters": [
+    {"title": "The Sharpe Ratio Challenge", "timestamp": "0:00"},
+    {"title": "Sharpe Ratio Components", "timestamp": "0:52"},
+    {"title": "Deriving Portfolio Variance", "timestamp": "1:51"},
+    {"title": "Expanding the Variance Term", "timestamp": "6:39"},
+    {"title": "The Role of Covariance", "timestamp": "9:51"},
+    {"title": "Improving Risk-Adjusted Returns", "timestamp": "11:45"},
+    {"title": "Stochastic vs. Physical Independence", "timestamp": "14:52"},
+    {"title": "The Orthogonal Solution", "timestamp": "16:46"}
+  ],
+  "transcript_available": true,
+  "transcript_language": "en",
+  "extraction_method": "browser_console",
+  "extraction_date": "2025-07-17"
+}

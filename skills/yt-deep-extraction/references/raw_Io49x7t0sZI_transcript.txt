@@ -1,0 +1,1 @@
+TOOL FAILURE: transcript - browser-only mode, no captions available, "Subtitles/closed captions unavailable" button visible, timedtext endpoint returns empty. Tag: MISSING (browser-only limitation)

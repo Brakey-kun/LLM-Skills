@@ -1,0 +1,1 @@
+TOOL FAILURE: transcript — browser_console network request blocked by security policy; timedtext endpoint returns empty page via browser_navigate; no manual captions available (only auto-generated ASR). Browser-only mode (Tier C) cannot access YouTube internal transcript API which requires POST with continuation token. Tagging transcript as MISSING (browser-only limitation).

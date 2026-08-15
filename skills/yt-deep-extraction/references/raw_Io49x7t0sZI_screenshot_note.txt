@@ -1,0 +1,1 @@
+TOOL FAILURE: screenshot capture - browser environment does not support canvas/mediaDevices capture API. Visual elements will be marked UNVERIFIED (no vision).

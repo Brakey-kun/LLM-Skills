@@ -1,0 +1,43 @@
+{
+  "video_id": "LX4Ugaxx9n0",
+  "title": "The Ultimate Guide to Quant Portfolio Management",
+  "url": "https://www.youtube.com/watch?v=LX4Ugaxx9n0",
+  "channel": "Roman Paolucci",
+  "channel_handle": "@QuantGuild",
+  "duration_seconds": 3431,
+  "duration_formatted": "57:11",
+  "views": "5.7K",
+  "upload_date_relative": "3 days ago",
+  "likes": "339",
+  "subscribers": "88.6K",
+  "description": "🚀 Master Quantitative Skills with Quant Guild\nhttps://quantguild.com\n\n🛡️ Learn to Run a Personal Hedge Fund\nhttps://quantguild.com/personal-hedge...\n\n📈 Interactive Brokers for Algorithmic Trading\nhttps://www.interactivebrokers.com/mk...\n\n👾 Join the Quant Guild Discord server here\n  / discord  \n___________________________________________\n📚 Free Quantitative Research Note 👇\nhttps://quantguild.com/personal-hedge...\n\n🪐 Free Jupyter Notebook Library 👇\nhttps://github.com/romanmichaelpaoluc...\n\n👤 Video Setting Up Interactive Brokers 👇\n   • How to Get Historical Market Data with Int...\n\n🔗 How to Read Options Chains 👇\n   • How to Read Options Chains\n\nChapters:\n0:00 The Complete Investing Framework\n1:15 Hard Truths About Investing\n4:41 Assets, Risk & Return\n7:20 Past Performance vs. Future Outcomes\n10:57 More Risk Does Not Mean More Return\n13:30 Volatility Drag\n17:59 The Efficient Market Hypothesis\n20:48 How Markets Set Prices\n25:08 Causality & Counterfactuals\n29:23 Positioning, Survival & Statistical Edge\n31:44 Portfolio Allocation & Diversification\n34:14 Diversifiable vs. Market Risk\n36:53 CAPM, Beta & Market Exposure\n40:51 Why Diversification Fails in Crises\n42:38 Physical Decorrelation\n47:07 Building a Portfolio Around Your Goals\n50:09 Hedged vs. Unhedged Portfolios",
+  "chapters": [
+    {"time": "0:00", "title": "The Complete Investing Framework"},
+    {"time": "1:15", "title": "Hard Truths About Investing"},
+    {"time": "4:41", "title": "Assets, Risk & Return"},
+    {"time": "7:20", "title": "Past Performance vs. Future Outcomes"},
+    {"time": "10:57", "title": "More Risk Does Not Mean More Return"},
+    {"time": "13:30", "title": "Volatility Drag"},
+    {"time": "17:59", "title": "The Efficient Market Hypothesis"},
+    {"time": "20:48", "title": "How Markets Set Prices"},
+    {"time": "25:08", "title": "Causality & Counterfactuals"},
+    {"time": "29:23", "title": "Positioning, Survival & Statistical Edge"},
+    {"time": "31:44", "title": "Portfolio Allocation & Diversification"},
+    {"time": "34:14", "title": "Diversifiable vs. Market Risk"},
+    {"time": "36:53", "title": "CAPM, Beta & Market Exposure"},
+    {"time": "40:51", "title": "Why Diversification Fails in Crises"},
+    {"time": "42:38", "title": "Physical Decorrelation"},
+    {"time": "47:07", "title": "Building a Portfolio Around Your Goals"},
+    {"time": "50:09", "title": "Hedged vs. Unhedged Portfolios"}
+  ],
+  "transcript_available": false,
+  "transcript_note": "Subtitles/closed captions unavailable per YouTube player UI",
+  "extraction_method": "browser_only",
+  "extraction_timestamp": "2025-07-18T00:00:00Z",
+  "confidence_tags": {
+    "metadata": "CONFIRMED",
+    "description": "CONFIRMED",
+    "chapters": "CONFIRMED",
+    "transcript": "MISSING"
+  }
+}

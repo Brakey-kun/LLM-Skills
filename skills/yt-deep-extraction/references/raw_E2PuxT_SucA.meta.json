@@ -1,0 +1,39 @@
+{
+  "videoId": "E2PuxT_SucA",
+  "title": "Stock Picking is Worse than Gambling at a Casino (I Can Prove It)",
+  "lengthSeconds": "1047",
+  "channelId": "UCW1svfGxG4ADnbc1HCH6dqA",
+  "channelName": "Roman Paolucci",
+  "viewCount": "10435",
+  "likeCount": "379",
+  "publishDate": "2026-06-23T11:00:11-07:00",
+  "uploadDate": "2026-06-23T11:00:11-07:00",
+  "category": "Science & Technology",
+  "description": "*🚀 Master Quantitative Skills with Quant Guild*\nhttps://quantguild.com\n\n*🛡️ Learn to Run a Personal Hedge Fund*\nhttps://quantguild.com/personal-hedge-fund\n\n*📈 Interactive Brokers for Algorithmic Trading*\nhttps://www.interactivebrokers.com/mkt/?src=quantguildY&url=%2Fen%2Fwhyib%2Foverview.php\n\n*👾 Join the Quant Guild Discord server here*\nhttps://discord.com/invite/MJ4FU2c6c3\n___________________________________________\n*🪐 Free Jupyter Notebook Library 👇*\nhttps://github.com/romanmichaelpaolucci/Quant-Guild-Library/tree/main\n\n*👤 Video Setting Up Interactive Brokers 👇*\nhttps://youtu.be/7hezNf49iKc\n\n*🔗 How to Read Options Chains 👇*\nhttps://youtu.be/RrRbz6oXwxE\n\nTL;DW Executive Summary:\n* This lecture dismantles the appeal of active stock picking by exposing the mathematical reality of volatility drag, where the gap between arithmetic and geometric returns severely impairs long-term compounding.\n* We detailed how high-volatility stock picking often relies on passive beta exposure rather than true idiosyncratic edge, leaving investors dangerously exposed to systemic drawdowns during market crises.\n* Through simulation and path analysis, we illustrated that investors cannot choose their \"sample path,\" and stock pickers face significantly worse outcomes in the bottom 10% of scenarios—characterized by 80% drawdowns compared to 50% for broad market portfolios.\n* Ultimately, we demonstrated that successful portfolio management requires moving beyond unhedged stock picking toward engineered strategies that incorporate hedge sleeves, allowing for the monetization of volatility and the creation of orthogonal, resilient payoffs.\n\nI hope you enjoyed, and I hope you learned something!\n\n- Roman\n___________________________________________\n*📖 Chapters:*\n00:00 - Stock Picking vs. Casino Gambling: The Math Proof\n00:55 - Why Your \"Alpha\" is Actually Just Passive Beta\n01:53 - The VRT Case Study: The Hidden Cost of Stock Picking\n04:01 - Volatility Drag: Why Your CAGR is a Lie\n05:50 - The Problem with Random Path Selection\n08:13 - The Quant Reality: Why Your Portfolio Blows Out\n10:02 - The Bottom 10%: Worst-Case Scenario Simulation\n13:54 - How to Improve CAGR (Without Stock Picking)\n14:48 - Engineering a Hedge Sleeve for Long-Term Success\n16:50 - Stop Trading, Start Engineering Risk\n___________________________________________\n*🗣️ Shout Outs*\n\nA special thank you to my members on YouTube for supporting my channel and enabling me to continue to create videos just like this one!\n\n*⭐ Quant Guild Directors*\nDr. Jason Pirozzolo\n___________________________________________\n*▶️ Related Videos*\n\n*Quant Builds 🔨*\nHow to Build a Live Volatility Surface in Python (Interactive Brokers)\nhttps://youtu.be/5JEeAsQqlro\n\n*Statistics and Trading Profitability Over Time (Edge) 📈*\n\nTime Series Analysis for Quant Finance\nhttps://youtu.be/JwqjuUnR8OY\n\nQuant Trader on Retail vs Institutional Trading\nhttps://youtu.be/j1XAcdEHzbU\n\nQuant on Trading and Investing\nhttps://youtu.be/CKXp_sMwPuY\n\nWhy Poker Pros Make the Best Traders (It's NOT Luck)\nhttps://youtu.be/wZChBKDFFeU\n\nQuant vs. Discretionary Trading\nhttps://youtu.be/3gblERSSHXI\n___________________________________________\n*🗂️ Resources*\n\n*📚 Quant Guild Library:*\nhttps://github.com/romanmichaelpaolucci/Quant-Guild-Library\n\n*🌎 GitHub:*\nhttps://github.com/RomanMichaelPaolucci\nhttps://github.com/Quant-Guild\n\n*📝 Medium (Blog):*\nhttps://quantguild.medium.com/\nhttps://medium.com/quant-guild\n___________________________________________\n*🛠️ Projects*\n\n*The Gaussian Cookbook:*\nhttps://gaussiancookbook.com\n\n*Recipes for simulating stochastic processes:*\nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=5332011\n___________________________________________\n*💬 Socials*\n\n*TikTok:* https://www.tiktok.com/@quantguild\n\n*Instagram:* https://www.instagram.com/quantguild/\n\n*X/Twitter:* https://x.com/quantguild/\n\n*LinkedIn (personal):* https://www.linkedin.com/in/rmp99/\n\n*LinkedIn (company):* https://www.linkedin.com/company/quant-guild\n___________________________________________",
+  "chapters": [
+    {"title": "Stock Picking vs. Casino Gambling: The Math Proof", "time": "0:00", "timeMs": 0},
+    {"title": "Why Your \"Alpha\" is Actually Just Passive Beta", "time": "0:55", "timeMs": 55000},
+    {"title": "The VRT Case Study: The Hidden Cost of Stock Picking", "time": "1:53", "timeMs": 113000},
+    {"title": "Volatility Drag: Why Your CAGR is a Lie", "time": "4:01", "timeMs": 241000},
+    {"title": "The Problem with Random Path Selection", "time": "5:50", "timeMs": 350000},
+    {"title": "The Quant Reality: Why Your Portfolio Blows Out", "time": "8:13", "timeMs": 493000},
+    {"title": "The Bottom 10%: Worst-Case Scenario Simulation", "time": "10:02", "timeMs": 602000},
+    {"title": "How to Improve CAGR (Without Stock Picking)", "time": "13:54", "timeMs": 834000},
+    {"title": "Engineering a Hedge Sleeve for Long-Term Success", "time": "14:48", "timeMs": 888000},
+    {"title": "Stop Trading, Start Engineering Risk", "time": "16:50", "timeMs": 1010000}
+  ],
+  "captions": {
+    "tracks": [
+      {
+        "baseUrl": "https://www.youtube.com/api/timedtext?v=E2PuxT_SucA&ei=rf5favebH6bep-oP-ZaxiAM&caps=asr&opi=112496729&exp=xpe&xoaf=5&xowf=1&xospf=1&hl=en&ip=0.0.0.0&ipbits=0&expire=1784701213&sparams=ip,ipbits,expire,v,ei,caps,opi,exp,xoaf&signature=239071AE692476D044189E8942D5204E3C3E12C6.160304D8A4C053829D187DB60BE13C80D928C6C5&key=yt8&kind=asr&lang=en&variant=gemini",
+        "name": "English (auto-generated)",
+        "vssId": "a.en",
+        "languageCode": "en",
+        "kind": "asr",
+        "isTranslatable": true
+      }
+    ]
+  },
+  "thumbnail": "https://i.ytimg.com/vi/E2PuxT_SucA/maxresdefault.jpg",
+  "canonicalUrl": "https://www.youtube.com/watch?v=E2PuxT_SucA"
+}

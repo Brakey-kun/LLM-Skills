@@ -1,0 +1,167 @@
+Video ID: GTVBT1SQKWY
+Title: Math to Increase your Sharpe Ratios
+URL: https://www.youtube.com/watch?v=GTVBT1SQKWY
+Duration: 18:14
+Channel: Roman Paolucci (Quant Guild)
+Subscribers: 88.6K
+Views: ~100 (like count, actual views unknown from page)
+Upload Date: Unknown (page shows "hours ago" for comments)
+Description (from page):
+🚀 Master Quantitative Skills with Quant Guild
+https://quantguild.com
+
+Chapters:
+1. The Sharpe Ratio Challenge - 0:00
+2. Sharpe Ratio Components - 0:52
+3. Deriving Portfolio Variance - 1:51
+4. Expanding the Variance Term - 6:39
+5. The Role of Covariance - 9:51
+6. Improving Risk-Adjusted Returns - 11:45
+7. Stochastic vs. Physical Independence - 14:52
+8. The Orthogonal Solution - 16:46
+
+FULL TRANSCRIPT (with timestamps):
+
+[0:00] The Sharpe Ratio Challenge
+If I told you that you could watch this video and improve your sharp ratio mechanically and understand exactly how to achieve that without any back tests.
+[0:12] Could you sit through all of the math?
+[0:15] I'm almost issuing you a challenge. We got a math video today. Everyone wants to improve their risk adjusted return,
+[0:22] but nobody wants to do the math that's required to accomplish that. That is exactly what we're going to cover today.
+[0:30] I'm going to walk you through this idea of physical decorrelation, physical structural independence to then improve
+[0:37] your sharp ratio. If we take a look at the sharp ratio itself, it's very simple. It's made up of two components.
+[0:44] The expected portfolio return and our portfolio standard deviation. Since this is just a fraction, a ratio, we can
+
+[0:52] Chapter 2: Sharpe Ratio Components
+improve it in one of two ways. We can either increase the portfolio expected returns or decrease our portfolio
+[1:02] standard deviation. Turns out mechanically this is quite easy to accomplish. But yes, I know we have a careful balancing act here. When I go
+[1:10] about increasing my expected return, I need to make sure that I'm not accidentally also increasing my portfolio variance. That's going to
+[1:19] offset the gain in the sharp ratio that I'm trying to achieve anyway. So we do need to be careful here. But there is
+[1:27] nevertheless a mechanical way that we can decrease our portfolio standard deviation. And this is exactly what I
+[1:36] use and many risk allocators use to determine their overall principal directions of risk and how to diversify
+[1:44] their exposures. So let's start then with this idea of two risky assets. I'm going to keep them arbitrary for now.
+
+[1:51] Chapter 3: Deriving Portfolio Variance
+You can think stocks, you can think bonds, crypto, it doesn't matter. We'll talk about it more later on. But let's start with risky asset A and risky asset
+[2:01] B. Our portfolio is made up of both risky assets A and B. So RP
+[2:08] is equal to R A plus RB. But we don't necessarily have an equal weight in each
+[2:18] asset. We're going to weight it by W and then W minus
+[2:25] or one minus W I should say. What this is going to do is it's going to allow the flexibility to hold however much of
+[2:33] A and however much of B we would like in our portfolio.
+[2:39] How do we get our portfolio standard deviation? Well, standard deviation is the square root of variance. So what we
+[2:46] need to do is we need to find the variance then of our portfolio. So the variance of the returns in our portfolio
+[2:55] is going to be equal to by definition the expectation of the returns of our portfolio as a random variable minus
+[3:04] then the expectation of the returns in our portfolio squared. This is just simply the squared
+[3:13] deviations or the expected squared deviations from the mean. And that is exactly what this guy is.
+[3:22] Since the expectation is linear, this is quite easy to find because we know this is our portfolio equation. I can just
+[3:30] take the expectation of both sides of this equation and distribute the expectation then to each of the
+[3:37] individual risky assets. So that's what I'm going to do now. I'll take the expectation of both sides. The expectation of the portfolio returns is
+[3:46] then equal to W. The expectation of the returns for asset A plus 1 minus W, the
+[3:54] expectation of returns for asset B. All right. Now, we're going to do some witchcraft that I call algebra. We're
+[4:03] going to subtract then this equation from this equation. and we're going to make a substitution for 1 minus w just
+[4:12] so we don't have to deal with it. We're going to call it q. So what I'm going to do here is I'm going to say 1 minus w is
+[4:20] equal to q and I will subtract these two equations from each other. So it's going to be r of p minus this side and then
+[4:28] this side minus this side. I can then factor out the weights and I'm going to be left with just differences of the random variables and their expectations.
+[4:39] So this will be then RP minus the expectation of
+[4:47] RP which is equal to W times then we
+[4:52] have R A and the expectation of RA
+[4:58] and then of course RB now weighted by Q minus the expectation of RB.
+[5:11] Now that we have this guy here, this looks quite familiar because this difference shows up in the equation for
+[5:19] variance. So I can just make then the substitution of this guy in for variance. And that's exactly what we're
+[5:27] going to do here. We're going to recall that the variance of our portfolio is equal to the expected squared
+[5:35] deviations of this difference that is the random variable's distance from its mean of our portfolio returns. And we're
+[5:44] going to substitute in this right hand side. So we're going to get W time R of A minus the expectation of R
+[5:52] of A plus Q
+[6:00] R of B minus the expectation of R of B and all of that is going to be squared all inside the expectation.
+[6:10] Now is the time for some more witchcraft. It's going to be to expand that square. To expand this guy, we are
+[6:19] going to have to square each of these terms and then produce the product of the two times 2, that inner cross term.
+[6:29] So, we're going to get w^2 times this is going to be r of a minus the expectation of r of a squ.
+
+[6:39] Chapter 4: Expanding the Variance Term
+That's the first term. Then we're going to take a look at the last term squared.
+[6:44] We're going to have plus q ^2 r of b minus the expectation of r of b
+[6:51] squared. And then we of course have the cross term. The cross term is going to be 2 wq
+[6:59] time r of a minus the expectation of r of a
+[7:07] time r of b minus the expectation of
+[7:12] r of b. Now I expanded this inner term here, this variance term. That's what I
+[7:22] just did. But I didn't apply the expectation to it yet. So we do have to remember this entire expansion here is
+[7:30] still wrapped in an expectation. So I'm going to get the expectation of this
+[7:37] entire thing. All right, this is going to be our variance. And what I want you to notice is because the expectation is
+[7:46] linear, I can just apply this operator to each one of these terms. Most importantly, look what happens when I
+[7:54] apply it to this final term here. This is where it becomes very interesting. If
+[8:01] I was to apply the expectation to that final term, what do you notice? You notice that the expectation
+[8:10] of just going to focus on this final term here to WQ
+[8:16] R A minus the expectation of RA The product of that with RB minus the
+[8:25] expectation of RB is what? Well, this is going to be still linear. So I can factor out the weights
+[8:33] and the two and I'm left with now the definition of coariance. This is the covariance of R A and RB.
+[8:46] In fact, if I apply the expectation operator to each of these terms, what do you notice?
+[8:53] That is by definition going to be the variance of asset A and the variance of
+[9:02] asset B. That's a huge idea here. So if I take then the expectation of
+[9:09] R of A minus the expectation of R of A squared, this is going to just be the
+[9:16] variance of asset A. And the same is true then for asset B.
+[9:34] So that means that the variance of our portfolio is really just made up of three components. We have the original
+[9:42] variance of the first asset times whatever the weight is squared plus the original variance of our second asset
+[9:51] Chapter 5: The Role of Covariance
+times whatever the weight is squared plus this cross term. The cross term is where things get very interesting
+[10:00] because we're dealing with covariance and the arbitrary weight. We have to recall what covariance is and how it's
+[10:09] related to correlation. So what I want to do here is I want to take the variance and I'm just going to
+[10:18] effectively write it in terms of these variances and covariance. That means that we're going to have the variance of
+[10:26] our portfolio as w^2 times
+[10:35] the variance of our first asset plus q ^2 times the variance of our second asset. So this is just the weight
+[10:42] squared of each of the weights in our portfolio for each asset. And we also
+[10:49] have this cross term 2 wq the covariance of r a and rb.
+[10:59] But what is covariance equal to? Well, we know covariance by definition is just going to be equal to this product of
+[11:06] this expectation of products here. But how is it related to correlation?
+[11:15] This is a far more interesting question and it's going to help us understand how we can mechanically improve our sharp
+[11:22] ratio. So what we're going to do here is we're going to notice that the covariance of
+[11:29] two random variables normalized by the individual standard deviations or the square roots of the variance is going to
+[11:38] be equal to the correlation coefficient between those two random variables. But
+[11:45] Chapter 6: Improving Risk-Adjusted Returns
+there's no reason why we can't multiply this over to the right. There's no reason. So what I'm going to do is I'm going to represent covariance instead as
+[11:54] a product and that is going to be the product of the correlation coefficient with the individual asset standard
+[12:04] deviations. This is an absolutely massive idea because now if I make this substitution in here for covariance,
+[12:12] watch what happens. I get the instead of covariance the standard deviation of asset A or not the standard or yes
+[12:21] actually the standard deviation of asset A the standard deviation of asset B and the correlation
+[12:28] coefficient the correlation coefficient this is where all the pieces of the puzzle fit together. This is where understanding
+[12:36] the difference between physical and stochastic independence will help you improve your sharp ratio. This is not conjecture. This is mathematical proof.
+[12:47] This is objective. This is not an opinion. This is literally improving your sharp ratio. Your risk adjusted
+[12:54] return shifting the efficient frontier out. What I want you to notice is so long as the correlation
+[13:03] between the two assets is less than one, this term is going to shrink. If the
+[13:11] correlation is 0.5, this term is going to shrink. How is that useful for us?
+[13:17] because we know that our portfolio standard deviation is equal to the square root of the variance.
+[13:27] Well, hold on a second. This is the variance. So, if I make this term smaller, this entire variance smaller,
+[13:35] I'm going to make the portfolio standard deviation smaller. How can I make the variance smaller? Well, I can't change
+[13:43] assets A and B. There's nothing I can do. I can't force assets A and B to change their variance. These are
+[13:51] effectively fixed. I can change the weights in each of them. That's true.
+[13:57] But what else is true? I'm free to hold whatever assets I want. So as long as I hold assets A and B such that their
+[14:05] correlation is as close to zero or even goes negative as possible, I'm going to
+[14:12] be mechanically decreasing my variance. This is objectively going to improve your sharp ratio. But there
+[14:21] is a problem here. There's a problem and that is
+[14:28] physical independence is always going to imply stochastic independence
+[14:40] but not the other way around.
+[14:44] Chapter 7: Stochastic vs. Physical Independence
+Not the other way around. In other words, if I have two things that are physically independent, think about
+[14:52] dice. If I roll one dice, it's not going to impact the next dice roll. I know for certain physical independence there
+[15:00] implies stochcastic independence. That literally proves that literally proves
+[15:07] that the correlation is going to be equal to zero. That is going to increase my sharp ratio. if
+[15:16] there is physical independence. But if I have arbitrary stochcastic independence, that isn't necessarily going to ensure my correlation is going to stay zero.
+[15:27] What do I mean by this? I have an entire quantitative research note written on this topic available on Quanild. I will leave a link to it in the description
+[15:35] below. I highly recommend you check it out because it goes into more depth of this idea. But this right here is
+[15:42] everything. This is everything because when I'm talking about stochastic independence, I'm talking about it as a property of a random variable. In the
+[15:51] classroom, when we say a return or maybe we say some sort of random variable is stochastically independent from another,
+[15:58] it literally objectively asmtoically proves the correlation is zero. In real life, we don't have that. We can't say
+[16:06] that Apple returns are stochastically independent from Nvidia returns. We can't say that. It might be true most of
+[16:12] the time and their correlation most of the time is going to be zero. That's going to give us a nice diversification benefit. But what's the problem?
+[16:22] Well, the problem is in a crisis, Apple and Nvidia go down. So their correlation is not going to stay zero. their
+[16:30] correlation is going to increase which is going to increase then the variance
+[16:37] and increase our standard deviation our portfolio standard deviation which will decrease our sharp ratio.
+[16:46] Chapter 8: The Orthogonal Solution
+So in the real world I can't just say things are stochastically independent. I have to look for things that are
+[16:53] physically independent because physical independence objectively I don't need a back test to tell you this will 100% of the time always imply stochcastic
+[17:02] independence that's not something then we have to worry about it might be true most of the time Apple and Nvidia are uncorrelated but they share principal
+[17:11] directions of risk the tech sector market risk but if I said that I have Nvidia in my portfolio and I also have a sports marketmaking algorithm them.
+[17:20] Those are physically independent. Those are completely independent. If tech stocks die tomorrow, my sports market
+[17:28] algorithm does not care. Those contracts resolve independent of the market. So, that is going to objectively improve
+[17:37] your risk adjusted return and your sharp ratio. Yes, you have to make sure you're not offsetting your expected return with this. You're not watering it down. Just
+[17:46] like we said at the start of the video when I said you got to make sure that this increase doesn't accidentally increase this this decrease can't
+[17:54] accidentally decrease this too much. But nevertheless, this is how you hunt for orthogonal returns. Understanding this
+[18:03] notion of physical diversification. And this right here is the mathematical proof objectively how you can increase your sharp ratio.

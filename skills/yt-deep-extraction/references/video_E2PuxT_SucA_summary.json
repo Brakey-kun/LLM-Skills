@@ -1,0 +1,31 @@
+{
+  "videoId": "E2PuxT_SucA",
+  "title": "Stock Picking is Worse than Gambling at a Casino (I Can Prove It)",
+  "url": "https://www.youtube.com/watch?v=E2PuxT_SucA",
+  "uploaded": "2026-06-23",
+  "duration": "17:27",
+  "views": "10,435",
+  "likes": "379",
+  "channel": "Roman Paolucci",
+  "channelId": "UCW1svfGxG4ADnbc1HCH6dqA",
+  "chapters": [
+    {"title": "Stock Picking vs. Casino Gambling: The Math Proof", "time": "0:00", "timeMs": 0},
+    {"title": "Why Your \"Alpha\" is Actually Just Passive Beta", "time": "0:55", "timeMs": 55000},
+    {"title": "The VRT Case Study: The Hidden Cost of Stock Picking", "time": "1:53", "timeMs": 113000},
+    {"title": "Volatility Drag: Why Your CAGR is a Lie", "time": "4:01", "timeMs": 241000},
+    {"title": "The Problem with Random Path Selection", "time": "5:50", "timeMs": 350000},
+    {"title": "The Quant Reality: Why Your Portfolio Blows Out", "time": "8:13", "timeMs": 493000},
+    {"title": "The Bottom 10%: Worst-Case Scenario Simulation", "time": "10:02", "timeMs": 602000},
+    {"title": "How to Improve CAGR (Without Stock Picking)", "time": "13:54", "timeMs": 834000},
+    {"title": "Engineering a Hedge Sleeve for Long-Term Success", "time": "14:48", "timeMs": 888000},
+    {"title": "Stop Trading, Start Engineering Risk", "time": "16:50", "timeMs": 1010000}
+  ],
+  "transcriptStatus": "MISSING (browser-only limitation: timedtext API POST blocked, auto-captions exist but cannot be fetched)",
+  "captionTracks": [
+    {"language": "English (auto-generated)", "kind": "asr", "baseUrl": "https://www.youtube.com/api/timedtext?v=E2PuxT_SucA&caps=asr&lang=en&kind=asr"}
+  ],
+  "description": "Full description saved to raw_E2PuxT_SucA.description.txt",
+  "tags": ["quantitative finance", "stock picking", "volatility drag", "CAGR", "portfolio management", "hedge sleeves", "risk engineering", "Monte Carlo simulation", "VRT case study", "geometric vs arithmetic returns"],
+  "extractionMethod": "browser-only (ytInitialPlayerResponse + DOM)",
+  "confidence": "CONFIRMED for metadata/chapters/description; MISSING for transcript"
+}

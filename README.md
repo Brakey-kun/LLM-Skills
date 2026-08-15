@@ -14,10 +14,11 @@ Each skill is self-contained in its own independent folder and includes its own 
 │   ├── aggregate-deep-research/
 │   ├── app-idea-to-build-prompt/
 │   ├── context-handoff/
-│   └── context-resume/
+│   ├── context-resume/
+│   ├── external-delegation/
+│   ├── project-uphaul/
+│   └── yt-deep-extraction/
 └── README.md
-```
-
 ## 🧩 Available Skills
 
 ### 1. `aggregate-deep-research`
@@ -50,10 +51,33 @@ The receiving-end counterpart to `context-handoff`.
 - Rehydrates the AI's context with all prior decisions, constraints, and files so work can continue seamlessly.
 *Triggered at the start of a new conversation by uploading the handoff package to pick up exactly where you left off.*
 
+### 5. `external-delegation`
+**Cross-Session AI Handoff Prompt Generator**
+Crafts a self-contained delegation prompt for handing off work to another AI session on a different account or platform.
+- Translates current context, decisions, and codebase state into an over-specified prompt.
+- Ensures the receiving model has exactly what it needs to continue without assumptions.
+*Use when you need another model to continue work but the session boundary erases context.*
+
+### 6. `project-uphaul`
+**Project Audit & Overhaul Pipeline**
+Runs a full, dynamic audit-and-overhaul pipeline on a project or codebase you didn't build or aren't familiar with.
+- **Sequences specialist skills:** Calls router, review, and autoresearch skills in a specific order.
+- **Diagnosis & Execution:** Classifies the project, scopes what's wrong, checks with the user, and executes the fix on a branch.
+*Trigger this when you inherit a messy project, want to audit code built by a weaker model, or need a structured quality review.*
+
+### 7. `yt-deep-extraction`
+**YouTube Channel Deep Research & Extraction**
+Deeply and losslessly extracts everything from a YouTube channel, playlist, or video list.
+- Gathers metadata, full transcripts, visuals, chapters, and creator claims.
+- Compiles per-video research files, a cross-referenced master report, and an interactive HTML lesson.
+- Model and runtime agnostic; operates with whatever tools the host agent has available.
+*Use this whenever you want to learn from, archive, build a course from, or mine knowledge out of any YouTube channel or set of videos.*
+
 ## 🚀 How to Use
 
 1. **Claude Projects**: You can upload the `.md` and reference files of a specific skill into your Claude Project's knowledge base, or paste the `SKILL.md` directly into the custom instructions.
 2. **Autonomous Agents / OMP**: Place the folders directly into your agent's `skills` directory for native triggering and execution.
+
 3. **Custom Workflows**: Adapt the `SKILL.md` logic to any prompt-chaining tools (like LangChain, Flowise, or AutoGPT).
 
 ## 📝 Philosophy

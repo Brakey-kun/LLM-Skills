@@ -1,0 +1,64 @@
+{
+  "video_id": "WsEwKlr_1lA",
+  "title": "When Does a Trading Strategy Actually Need to be Secret?",
+  "channel": "Roman Paolucci (Quant Guild)",
+  "channel_handle": "@QuantGuild",
+  "url": "https://www.youtube.com/watch?v=WsEwKlr_1lA",
+  "duration_seconds": 1192,
+  "duration_formatted": "19:52",
+  "views": 10000,
+  "likes": 428,
+  "channel_subscribers": 89100,
+  "upload_timeframe": "~2 weeks ago",
+  "description_full": "🚀 Master Quantitative Skills with Quant Guild\nhttps://quantguild.com\n\n🛡️ Learn to Run a Personal Hedge Fund\nhttps://quantguild.com/personal-hedge...\n\n📈 Interactive Brokers for Algorithmic Trading\nhttps://www.interactivebrokers.com/mk...\n\n👾 Join the Quant Guild Discord server here\n  / discord  \n___________________________________________\n🪐 Free Jupyter Notebook Library 👇\nhttps://github.com/romanmichaelpaoluc...\n\n👤 Video Setting Up Interactive Brokers 👇\n   • How to Get Historical Market Data with Int...\n\n🔗 How to Read Options Chains 👇\n   • How to Read an Options Chain  \n\nTL;DW Executive Summary:\nThis lecture clarifies why most \"secret trading strategies\" are not truly secret at all: many apparent sources of outperformance are simply leveraged exposure to market beta, factor risk premia, or known return streams that only perform when the broader market regime cooperates.\nWe explained how investors should distinguish between risk allocation and alpha generation, showing that strategies tied to equities, sentiment, volatility risk premium, momentum, size, or value are often exposures to undiversifiable risks rather than proprietary market inefficiencies.\nThrough bull-market and bear-market examples, we demonstrated that overexposed beta strategies can look impressive during rising markets but suffer extreme drawdowns when conditions reverse, while well-structured hedge portfolios trade some upside for crisis resilience and improved long-term survival.\nUltimately, the lecture argues that true alpha becomes secretive only when it comes from a scarce, hard-to-replicate edge—such as proprietary data, market-making infrastructure, or an undocumented inefficiency—while robust portfolio management depends on regime awareness, hedging, orthogonal return streams, and disciplined risk allocation.\n\nI hope you enjoyed, and I hope you learned something!\n\nRoman\n___________________________________________\n📖 Chapters:\n00:00 - Why Trading Strategies Don't Need to Be Secret\n00:53 - Bull Market Alpha or Just Leveraged Beta?\n02:40 - The Drawdown Problem with Market Overexposure\n03:37 - Risk Premia: What Actually Drives Returns\n04:31 - Orthogonal Return Streams and Uncorrelated Alpha\n06:37 - Market Regimes: You Don't Pick the Pitch\n08:39 - Hedge Fund Positioning for Crisis Survival\n10:31 - Cutting Drawdowns with Portfolio Insurance\n12:24 - Allocation vs. Alpha: The Core Distinction\n15:00 - When Alpha Actually Becomes Secret\n16:43 - Proprietary Data and Hidden Market Inefficiencies\n17:42 - Secret Strategies vs. Shareable Portfolio Design\n___________________________________________\n🗣️ Shout Outs\n\nA special thank you to my members on YouTube for supporting my channel and enabling me to continue to create videos just like this one!\n\n⭐ Quant Guild Directors\nDr. Jason Pirozzolo\n___________________________________________\n▶️ Related Videos\n\nQuant Builds 🔨\nHow to Build a Live Volatility Surface in Python (Interactive Brokers)\n   • How to Build a Live Volatility Surface in ...  \n\nStatistics and Trading Profitability Over Time (Edge) 📈\n\nTime Series Analysis for Quant Finance\n   • Time Series Analysis for Quant Finance  \n\nQuant Trader on Retail vs Institutional Trading\n   • Quant Trader on Retail vs. Institutional T...  \n\nQuant on Trading and Investing\n   • Quant on Trading and Investing  \n\nWhy Poker Pros Make the Best Traders (It's NOT Luck)\n   • Video  \n\nQuant vs. Discretionary Trading\n   • Quant vs. Discretionary Trading  \n___________________________________________\n🗂️ Resources\n\n📚 Quant Guild Library:\nhttps://github.com/romanmichaelpaoluc...\n\n🌎 GitHub:\nhttps://github.com/RomanMichaelPaolucci\nhttps://github.com/Quant-Guild\n\n📝 Medium (Blog):\n  / quantguild  \n  / quant  \n___________________________________________\n🛠️ Projects\n\nThe Gaussian Cookbook:\nhttps://gaussiancookbook.com\n\nRecipes for simulating stochastic processes:\nhttps://papers.ssrn.com/sol3/papers.c...\n___________________________________________\n💬 Socials\n\nTikTok:   / quantguild  \n\nInstagram:   / quantguild  \n\nX/Twitter: https://x.com/quantguild/\n\nLinkedIn (personal):   / rmp99  \n\nLinkedIn (company):   / quant-guild  \n___________________________________________",
+  "chapters": [
+    {"title": "Why Trading Strategies Don't Need to Be Secret", "time": "00:00"},
+    {"title": "Bull Market Alpha or Just Leveraged Beta?", "time": "00:53"},
+    {"title": "The Drawdown Problem with Market Overexposure", "time": "02:40"},
+    {"title": "Risk Premia: What Actually Drives Returns", "time": "03:37"},
+    {"title": "Orthogonal Return Streams and Uncorrelated Alpha", "time": "04:31"},
+    {"title": "Market Regimes: You Don't Pick the Pitch", "time": "06:37"},
+    {"title": "Hedge Fund Positioning for Crisis Survival", "time": "08:39"},
+    {"title": "Cutting Drawdowns with Portfolio Insurance", "time": "10:31"},
+    {"title": "Allocation vs. Alpha: The Core Distinction", "time": "12:24"},
+    {"title": "When Alpha Actually Becomes Secret", "time": "15:00"},
+    {"title": "Proprietary Data and Hidden Market Inefficiencies", "time": "16:43"},
+    {"title": "Secret Strategies vs. Shareable Portfolio Design", "time": "17:42"}
+  ],
+  "related_videos": [
+    "How to Build a Live Volatility Surface in Python (Interactive Brokers)",
+    "Statistics and Trading Profitability Over Time (Edge)",
+    "Time Series Analysis for Quant Finance",
+    "Quant Trader on Retail vs Institutional Trading",
+    "Quant on Trading and Investing",
+    "Why Poker Pros Make the Best Traders (It's NOT Luck)",
+    "Quant vs. Discretionary Trading"
+  ],
+  "resources": {
+    "quantguild_library": "https://github.com/romanmichaelpaolucci/...",
+    "github_personal": "https://github.com/RomanMichaelPaolucci",
+    "github_org": "https://github.com/Quant-Guild",
+    "medium_blog": "https://medium.com/quantguild",
+    "gaussian_cookbook": "https://gaussiancookbook.com",
+    "stochastic_processes_paper": "https://papers.ssrn.com/sol3/papers.cfm?...",
+    "discord": "https://discord.gg/quantguild",
+    "twitter": "https://x.com/quantguild",
+    "linkedin_personal": "https://linkedin.com/in/rmp99",
+    "linkedin_company": "https://linkedin.com/company/quant-guild"
+  },
+  "extraction_method": "browser_navigate + browser_console (ytInitialData)",
+  "extraction_timestamp": "2026-07-21",
+  "tool_failures": [
+    "transcript extraction: browser_console network request blocked; timedtext endpoint not attempted due to no-shell environment"
+  ],
+  "transcript_status": "MISSING (browser-only limitation)",
+  "confidence_tags": {
+    "metadata": "CONFIRMED",
+    "description": "CONFIRMED",
+    "chapters": "CONFIRMED",
+    "framework_claims": "CONFIRMED (from description)",
+    "numerical_examples": "MISSING",
+    "visual_elements": "UNVERIFIED (no vision)",
+    "transcript_quotes": "MISSING"
+  }
+}

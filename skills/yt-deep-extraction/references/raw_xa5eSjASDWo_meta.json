@@ -1,0 +1,37 @@
+{
+  "video_id": "xa5eSjASDWo",
+  "title": "A REAL Quant Debunks the \"Day Trading\" Scam",
+  "url": "https://www.youtube.com/watch?v=xa5eSjASDWo",
+  "channel": "Roman Paolucci",
+  "channel_handle": "@QuantGuild",
+  "upload_date": "Jun 26, 2026",
+  "duration": "19:59",
+  "views": "41,566",
+  "likes": "1.6K",
+  "subscribers": "89.1K",
+  "description": "🚀 Master Quantitative Skills with Quant Guild\nhttps://quantguild.com\n\n🛡️ Learn to Run a Personal Hedge Fund\nhttps://quantguild.com/personal-hedge...\n\n📈 Interactive Brokers for Algorithmic Trading\nhttps://www.interactivebrokers.com/mk...\n\n👾 Join the Quant Guild Discord server here\n  / discord  \n___________________________________________\n🪐 Free Jupyter Notebook Library 👇\nhttps://github.com/romanmichaelpaoluc...\n\n👤 Video Setting Up Interactive Brokers 👇\n  • How to Get Historical Market Data with Int...\n\n🔗 How to Read Options Chains 👇\n  • How to Read an Options Chain\n\n📈 Referenced Video on Algorithmic Market Making 👇\n  • Quant Explains Algorithmic Market-Making\n\nTL;DW Executive Summary:\nThis video debunks the \"day trading\" scam by using rigorous math to expose the impossibility of the inflated returns often advertised in trading thumbnails\nI highlighted that if these extreme P&L claims were consistent, they would imply a Compound Annual Growth Rate (CAGR) that would mathematically lead to more wealth than exists in the entire world, exposing them as cherry-picked or fraudulent\nI demonstrated that markets are not fair games but environments where the \"house\"—those who understand position sizing and risk management—consistently wins against uninformed players who are destined to blow out their accounts\nBy analyzing the lack of counterfactuals and the non-convergence of probability distributions in real-world market regimes, we explained why backtested indicators frequently fail when applied out-of-sample\nUltimately, we advocated for a focus on long-term positioning and survival, showing through comparative simulations that hedged, active management portfolios often outperform unhedged market exposure by mitigating drawdowns and harnessing the power of geometric convexity\n\nI hope you enjoyed, and I hope you learned something!\n\nRoman\n___________________________________________\n📖 Chapters:\n00:00 - The \"Day Trading\" Scam\n01:47 - The Math of Failure\n02:45 - Debunking the Thumbnails\n03:33 - Being the Casino vs. Player\n05:07 - Why Backtesting is a Trap\n07:33 - Reality of Volatility Drag & Geometric Growth\n09:16 - Why Market Regimes Make Your Models Wrong\n11:40 - Positioning & Survival is the Only Way to Win\n13:10 - Passive Beta vs. Hedge Sleeves: A Case Study\n15:37 - The \"True\" Alpha: Hedging Boosts CAGR\n17:17 - Learning is the Only Non-Linear Payoff\n18:44 - Why Most Traders Will Never Make It\n___________________________________________\n🗣️ Shout Outs\n\nA special thank you to my members on YouTube for supporting my channel and enabling me to continue to create videos just like this one!\n\n⭐ Quant Guild Directors\nDr. Jason Pirozzolo\n___________________________________________\n▶️ Related Videos\n\nQuant Builds 🔨\nHow to Build a Live Volatility Surface in Python (Interactive Brokers)\n  • How to Build a Live Volatility Surface in ...\n\nStatistics and Trading Profitability Over Time (Edge) 📈\n\nTime Series Analysis for Quant Finance\n  • Time Series Analysis for Quant Finance\n\nQuant Trader on Retail vs Institutional Trading\n  • Quant Trader on Retail vs. Institutional T...\n\nQuant on Trading and Investing\n  • Quant on Trading and Investing\n\nWhy Poker Pros Make the Best Traders (It's NOT Luck)\n  • Video\n\nQuant vs. Discretionary Trading\n  • Quant vs. Discretionary Trading\n___________________________________________\n🗂️ Resources\n\n📚 Quant Guild Library:\nhttps://github.com/romanmichaelpaoluc...\n\n🌎 GitHub:\nhttps://github.com/RomanMichaelPaolucci\nhttps://github.com/Quant-Guild\n\n📝 Medium (Blog):\n  / quantguild\n  / quant\n___________________________________________\n🛠️ Projects\n\nThe Gaussian Cookbook:\nhttps://gaussiancookbook.com\n\nRecipes for simulating stochastic processes:\nhttps://papers.ssrn.com/sol3/papers.c...\n___________________________________________\n💬 Socials\n\nTikTok:   / quantguild\n\nInstagram:   / quantguild\n\nX/Twitter: https://x.com/quantguild/\n\nLinkedIn (personal):   / rmp99\n\nLinkedIn (company):   / quant-guild\n___________________________________________",
+  "chapters": [
+    {"time": "0:00", "title": "The \"Day Trading\" Scam"},
+    {"time": "1:47", "title": "The Math of Failure"},
+    {"time": "2:45", "title": "Debunking the Thumbnails"},
+    {"time": "3:33", "title": "Being the Casino vs. Player"},
+    {"time": "5:07", "title": "Why Backtesting is a Trap"},
+    {"time": "7:33", "title": "Reality of Volatility Drag & Geometric Growth"},
+    {"time": "9:16", "title": "Why Market Regimes Make Your Models Wrong"},
+    {"time": "11:40", "title": "Positioning & Survival is the Only Way to Win"},
+    {"time": "13:10", "title": "Passive Beta vs. Hedge Sleeves: A Case Study"},
+    {"time": "15:37", "title": "The \"True\" Alpha: Hedging Boosts CAGR"},
+    {"time": "17:17", "title": "Learning is the Only Non-Linear Payoff"},
+    {"time": "18:44", "title": "Why Most Traders Will Never Make It"}
+  ],
+  "transcript_status": "MISSING",
+  "transcript_error": "TOOL FAILURE: transcript — Subtitles/closed captions unavailable button indicates no captions; transcript panel loads empty; ytInitialData has 0 transcript segments",
+  "extraction_timestamp": "2025-07-21T00:00:00Z",
+  "extraction_method": "browser-only (Tier C)",
+  "confidence_tags": {
+    "metadata": "CONFIRMED",
+    "description": "CONFIRMED",
+    "chapters": "CONFIRMED",
+    "transcript": "MISSING"
+  }
+}

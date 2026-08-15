@@ -1,0 +1,7 @@
+TOOL FAILURE: transcript — browser-only POST blocked / timedtext empty
+Transcript MISSING (browser-only limitation)
+Video ID: LX4Ugaxx9n0
+Title: The Ultimate Guide to Quant Portfolio Management
+Channel: Roman Paolucci (@QuantGuild)
+Note: YouTube internal transcript API requires POST with continuation token, which browser_console cannot make. Public timedtext endpoints returned empty. No manual or auto-captions available via browser-only extraction.
+Confidence: MISSING (browser-only limitation)

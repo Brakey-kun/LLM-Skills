@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "channel_url": "https://www.youtube.com/@QuantGuild",
+  "channel_id": "UCW1svfGxG4ADnbc1HCH6dqA",
+  "total_iterations": 12,
+  "action_cycle_position": 1,
+  "videos_extracted": ["GTVBT1SQKWY", "A7zJARrdo3U", "LX4Ugaxx9n0", "bCg9Q-nnJKI", "-sE1kz-fypI", "kOzvtRE_uX8", "A6QWWrhDJTc", "WsEwKlr_1lA", "37wRzGdC9w4", "Io49x7t0sZI", "xa5eSjASDWo", "E2PuxT_SucA"],
+  "videos_queue": ["21SONVlvkDQ", "E73rL7Hex-k", "kmAE9ZhQ0jU", "aoT3Zln2cak", "KD_fh_jA_iQ", "Soea_7rzkR8", "YDjOBWb5iG8", "sgbEkAYAdwk", "1r39EGSm9fw", "QNYstoX0u1k", "-CPUbalMh14", "mFovTf-TMvw", "bX-mT1pZFho", "8kBpVelo9Tg", "RBfc8SkRwwU", "92dW2ZDTsJg", "qKCjatq9CZM", "FdqvAuHOQeE"],
+  "last_check_date": "2025-07-17",
+  "next_video_index": 12,
+  "html_version": 0,
+  "tool_failure_count": 14,
+  "current_phase": "extract_next_queued_video",
+  "objective": "learn professional quant trading knowledge",
+  "selection_strategy": "targeted",
+  "model_tier": "C"
+}

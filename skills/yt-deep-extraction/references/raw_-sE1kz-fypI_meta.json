@@ -1,0 +1,35 @@
+{
+  "video_id": "-sE1kz-fypI",
+  "title": "Modeling Tail Risk: A Quantitative Survival Guide",
+  "channel": "Roman Paolucci",
+  "channel_handle": "@QuantGuild",
+  "channel_subscribers": "88.7K",
+  "duration": "19:58",
+  "duration_seconds": 1198,
+  "views": "5.4K",
+  "likes": 283,
+  "upload_date": "7 days ago",
+  "estimated_upload_date": "2026-07-11",
+  "description": "\uD83D\uDE80 Master Quantitative Skills with Quant Guild\nhttps://quantguild.com\n\n\uD83D\uDEE1\uFE0F Learn to Run a Personal Hedge Fund\nhttps://quantguild.com/personal-hedge...\n\n\uD83D\uDCC8 Interactive Brokers for Algorithmic Trading\nhttps://www.interactivebrokers.com/mk...\n\n\uD83D\uDC7E Join the Quant Guild Discord server here\n  / discord  \n___________________________________________\n\uD83A\uFE0F Free Jupyter Notebook Library \uD83D\uDC47\nhttps://github.com/romanmichaelpaoluc...\n\n\uD83C\uDF0A ARCH & GARCH Model Tutorial*\n\u2003\u2022\u2003Master Volatility with ARCH & GARCH Models  \n\n\uD83D\uDC64 Video Setting Up Interactive Brokers \uD83D\uDC47\n\u2003\u2022\u2003How to Get Historical Market Data with Int...  \n\n\uD83D\uDD17 How to Read Options Chains \uD83D\uDC47\n\u2003\u2022\u2003How to Read an Options Chain  \n\nTL;DW Executive Summary:\nThis video explains why investors should treat market crashes like car crashes: unlikely on any given day, but inevitable over a long enough timeline, making portfolio \u201cinsurance\u201d essential for survival through severe equity drawdowns\nI highlighted that most passive portfolios are exposed to the same principal direction of risk in U.S. equities, yet remain unprotected against 20%, 40%, 60%, or even 80% market shocks, leaving investors vulnerable to forced selling at the worst possible time\nI demonstrated that traditional static risk models fail catastrophically by showing how a normal distribution dramatically underestimates fat-tailed market risk, despite SPY experiencing 19 extreme \u201cblack swan\u201d events over roughly 25 years\nI contrasted failed classroom-style parametric modeling with regime-based volatility modeling, showing how GARCH-style low, mid, and high volatility regimes better capture the real probability of crisis events and extreme return behavior\nUltimately, I framed the core lesson as positioning over prediction: investors cannot forecast the next crash, but they can build portfolios designed for survival, optionality, and long-run convex growth by having capital available when everyone else is forced to sell\n\nI hope you enjoyed, and I hope you learned something!\n\nRoman\n___________________________________________\n\uD83D\uDCD6 Chapters:\n00:00 - Market Crash Insurance\n03:24 - Why Normal Risk Models Fail\n08:46 - Regime Modeling Tail Risk\n12:19 - Positioning Beats Prediction\n16:45 - Portfolio Survival Strategy\n18:27 - Crisis Optionality\n___________________________________________\n\uD83D\uDDE3\uFE0F Shout Outs\n\nA special thank you to my members on YouTube for supporting my channel and enabling me to continue to create videos just like this one!\n\n\u2B50 Quant Guild Directors\nDr. Jason Pirozzolo\n___________________________________________\n\u25B6\uFE0F Related Videos\n\nQuant Builds \uD83D\uDCA8\nHow to Build a Live Volatility Surface in Python (Interactive Brokers)\n\u2003\u2022\u2003How to Build a Live Volatility Surface in...  \n\nStatistics and Trading Profitability Over Time (Edge) \uD83D\uDCC8\n\nTime Series Analysis for Quant Finance\n\u2003\u2022\u2003Time Series Analysis for Quant Finance  \n\nQuant Trader on Retail vs Institutional Trading\n\u2003\u2022\u2003Quant Trader on Retail vs. Institutional T...  \n\nQuant on Trading and Investing\n\u2003\u2022\u2003Quant on Trading and Investing  \n\nWhy Poker Pros Make the Best Traders (It's NOT Luck)\n\u2003\u2022\u2003Video  \n\nQuant vs. Discretionary Trading\n\u2003\u2022\u2003Quant vs. Discretionary Trading  \n___________________________________________\n\uD83D\uDCC2 Resources\n\n\uD83D\uDCDA Quant Guild Library:\nhttps://github.com/romanmichaelpaoluc...\n\n\uD83C\uDF0E GitHub:\nhttps://github.com/RomanMichaelPaolucci\nhttps://github.com/Quant-Guild\n\n\uD83D\uDDD3 Medium (Blog):\n  / quantguild  \n  / quant  \n___________________________________________\n\uD83D\uDEE0\uFE0F Projects\n\nThe Gaussian Cookbook:\nhttps://gaussiancookbook.com\n\nRecipes for simulating stochastic processes:\nhttps://papers.ssrn.com/sol3/papers.c...\n___________________________________________\n\uD83D\uDCAC Socials\n\nTikTok:  / quantguild  \n\nInstagram:  / quantguild  \n\nX/Twitter: https://x.com/quantguild/\n\nLinkedIn (personal):  / rmp99  \n\nLinkedIn (company):  / quant-guild  \n___________________________________________",
+  "chapters": [
+    {"title": "Market Crash Insurance", "time": "00:00"},
+    {"title": "Why Normal Risk Models Fail", "time": "03:24"},
+    {"title": "Regime Modeling Tail Risk", "time": "08:46"},
+    {"title": "Positioning Beats Prediction", "time": "12:19"},
+    {"title": "Portfolio Survival Strategy", "time": "16:45"},
+    {"title": "Crisis Optionality", "time": "18:27"}
+  ],
+  "transcript_status": "MISSING (browser-only limitation: transcript panel buttons hidden, timedtext API blocked by browser security policy)",
+  "extraction_method": "browser-only (Tier C: no shell, no yt-dlp, no transcript API access)",
+  "tool_failures": [
+    "transcript extraction: browser_console network requests blocked, transcript panel buttons not accessible via DOM click",
+    "visual capture: no browser_vision/screenshot tool available in this environment"
+  ],
+  "confidence_tags": {
+    "metadata": "CONFIRMED",
+    "description": "CONFIRMED",
+    "chapters": "CONFIRMED",
+    "transcript": "MISSING",
+    "visual_elements": "UNVERIFIED (no vision)"
+  }
+}
