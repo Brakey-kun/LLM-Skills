@@ -1,10 +1,10 @@
-# 🛠️ Personal LLM Skills & Workflows
+#  Personal LLM Skills & Workflows
 
-Welcome to my personal repository of **LLM Skills**. This repository contains custom, modular behaviors and workflows that I've built for my own daily day-to-day interactions and projects with Claude and other agentic LLMs. 
+This repository contains custom, modular behaviors and workflows that I've built for my own daily day-to-day interactions and projects with Claude and other agentic LLMs. 
 
 These skills act as extended system instructions or workflows, turning conversational AI into powerful, structured workflow engines for research, design, development, and context management.
 
-## 📁 Repository Structure
+##  Repository Structure
 
 Each skill is self-contained in its own independent folder and includes its own `SKILL.md` along with any required references or assets. This structure is designed to be highly portable and accommodating to most AI tool architectures (like MCP servers, custom GPTs, Claude Projects, or autonomous agent environments).
 
@@ -19,7 +19,7 @@ Each skill is self-contained in its own independent folder and includes its own 
 │   ├── project-uphaul/
 │   └── yt-deep-extraction/
 └── README.md
-## 🧩 Available Skills
+##  Available Skills
 
 ### 1. `aggregate-deep-research`
 **Multi-Phase Deep Research Pipeline**
@@ -73,7 +73,7 @@ Deeply and losslessly extracts everything from a YouTube channel, playlist, or v
 - Model and runtime agnostic; operates with whatever tools the host agent has available.
 *Use this whenever you want to learn from, archive, build a course from, or mine knowledge out of any YouTube channel or set of videos.*
 
-## 🚀 How to Use
+##  How to Use
 
 1. **Claude Projects**: You can upload the `.md` and reference files of a specific skill into your Claude Project's knowledge base, or paste the `SKILL.md` directly into the custom instructions.
 2. **Autonomous Agents / OMP**: Place the folders directly into your agent's `skills` directory for native triggering and execution.
