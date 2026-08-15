@@ -18,6 +18,8 @@ Each skill is self-contained in its own independent folder and includes its own 
 │   ├── external-delegation/
 │   ├── project-uphaul/
 │   └── yt-deep-extraction/
+├── claude-web-skills/
+│   └── *.skill (packaged web skills)
 └── README.md
 ## 🧩 Available Skills
 
@@ -75,10 +77,17 @@ Deeply and losslessly extracts everything from a YouTube channel, playlist, or v
 
 ## 🚀 How to Use
 
-1. **Claude Projects**: You can upload the `.md` and reference files of a specific skill into your Claude Project's knowledge base, or paste the `SKILL.md` directly into the custom instructions.
-2. **Autonomous Agents / OMP**: Place the folders directly into your agent's `skills` directory for native triggering and execution.
+This repository offers skills in two different formats depending on where you intend to use them:
 
-3. **Custom Workflows**: Adapt the `SKILL.md` logic to any prompt-chaining tools (like LangChain, Flowise, or AutoGPT).
+### 1. Normal Skills (`skills/`)
+These are uncompressed, raw directory structures containing the `SKILL.md` and any associated reference files. 
+- **Use for:** Terminal-based or CLI harnesses like Claude Code, Hermes, OMP (`omp.sh`), Odysseus, or custom LangChain/Flowise workflows.
+- **Why:** They are easily readable by humans, version-controllable, and natively executable by most local autonomous agent environments that scan a local `skills` directory.
+
+### 2. Claude Web Skills (`claude-web-skills/`)
+These are packaged `.skill` files (which are actually ZIP archives containing the raw skill directories). 
+- **Use for:** The Claude.ai web interface (Claude Projects).
+- **Why:** You can upload these `.skill` files directly as project knowledge base attachments, allowing the web version of Claude to read the internal structure and instructions seamlessly.
 
 ## 📝 Philosophy
 I created these to solve the repetitive friction points I encountered using AI: losing context on long threads, hallucinated research details, and unorganized coding prompts. By formalizing these workflows into "Skills", I get predictable, high-quality outputs every single time.
