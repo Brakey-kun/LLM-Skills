@@ -16,7 +16,7 @@ Each skill is self-contained in its own independent folder and includes its own 
 │   ├── context-handoff/
 │   ├── context-resume/
 │   ├── external-delegation/
-│   ├── kiro-spec/
+│   ├── ghostey-spec/
 │   ├── project-uphaul/
 │   └── yt-deep-extraction/
 ├── claude-web-skills/
@@ -26,9 +26,9 @@ Each skill is self-contained in its own independent folder and includes its own 
 
 ## Available Skills
 
-### 1. `kiro-spec`
+### 1. `ghostey-spec`
 **Spec-Driven Development & Wave DAG Engine**
-Injects the Kiro Spec-Driven Development (SDD) workflow and a parallel execution engine natively into the workspace.
+Injects the Ghosty Spec-Driven Development (SDD) workflow and a parallel execution engine natively into the workspace.
 - **Documentation First:** Forces the creation of rigorous requirements, architectural designs, and task lists before execution.
 - **Wave DAG Execution:** Parses tasks into dependency waves and dynamically schedules them across specialized agents in parallel.
 - **Quality & Trackability:** Trades immediate speed for deliberate correctness, allowing drafts to be reviewed and modified before code is written.
