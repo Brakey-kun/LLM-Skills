@@ -1,10 +1,10 @@
 ---
-name: ghostey-spec
+name: ghosty-spec
 description: Injects the Ghosty Spec-Driven Development (SDD) workflow and parallel Wave DAG execution engine natively into any OMP workspace.
 ---
 
 ---
-name: ghostey-spec
+name: ghosty-spec
 description: Injects the Ghosty Spec-Driven Development (SDD) workflow and parallel Wave DAG execution engine natively into any OMP workspace.
 ---
 

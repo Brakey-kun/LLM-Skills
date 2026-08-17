@@ -16,7 +16,7 @@ Each skill is self-contained in its own independent folder and includes its own 
 │   ├── context-handoff/
 │   ├── context-resume/
 │   ├── external-delegation/
-│   ├── ghostey-spec/
+│   ├── ghosty-spec/
 │   ├── project-uphaul/
 │   └── yt-deep-extraction/
 ├── claude-web-skills/
@@ -26,7 +26,7 @@ Each skill is self-contained in its own independent folder and includes its own 
 
 ## Available Skills
 
-### 1. `ghostey-spec`
+### 1. `ghosty-spec`
 **Spec-Driven Development & Wave DAG Engine**
 Injects the Ghosty Spec-Driven Development (SDD) workflow and a parallel execution engine natively into the workspace.
 - **Documentation First:** Forces the creation of rigorous requirements, architectural designs, and task lists before execution.
