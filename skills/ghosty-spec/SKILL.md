@@ -106,3 +106,14 @@ In a *separate*, subsequent `eval` cell, invoke the runner on the current projec
 ```javascript
 await runGhostySpecInOMP('.kiro/specs/{feature-name}');
 ```
+
+## 4. Spec Metadata (Optional)
+For advanced project tracking, you may optionally generate a `.config.ghosty` file alongside the markdown files in `.ghosty/specs/{feature-name}/`. This file should contain JSON metadata for the spec:
+
+```json
+{
+  "specId": "<generate-uuid>",
+  "workflowType": "design-first",
+  "specType": "feature"
+}
+```
