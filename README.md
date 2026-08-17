@@ -16,6 +16,7 @@ Each skill is self-contained in its own independent folder and includes its own 
 │   ├── context-handoff/
 │   ├── context-resume/
 │   ├── external-delegation/
+│   ├── kiro-spec/
 │   ├── project-uphaul/
 │   └── yt-deep-extraction/
 ├── claude-web-skills/
@@ -25,7 +26,15 @@ Each skill is self-contained in its own independent folder and includes its own 
 
 ## Available Skills
 
-### 1. `aggregate-deep-research`
+### 1. `kiro-spec`
+**Spec-Driven Development & Wave DAG Engine**
+Injects the Kiro Spec-Driven Development (SDD) workflow and a parallel execution engine natively into the workspace.
+- **Documentation First:** Forces the creation of rigorous requirements, architectural designs, and task lists before execution.
+- **Wave DAG Execution:** Parses tasks into dependency waves and dynamically schedules them across specialized agents in parallel.
+- **Quality & Trackability:** Trades immediate speed for deliberate correctness, allowing drafts to be reviewed and modified before code is written.
+*Use this when starting complex, multi-step projects where code quality, architectural integrity, and strict traceability matter more than raw speed.*
+
+### 2. `aggregate-deep-research`
 **Multi-Phase Deep Research Pipeline**
 A robust, model-agnostic pipeline for comprehensive research. It transforms a simple prompt or topic into a full-fidelity interactive HTML guide through a strict multi-phase process:
 - **Capability Probe & Web Research:** Gathering 50-1000 sources.
@@ -34,35 +43,35 @@ A robust, model-agnostic pipeline for comprehensive research. It transforms a si
 - **Synthesis:** Aggregating data into a master synthesis and a final interactive HTML lesson.
 *Ideal for critical personal research or generating comprehensive educational materials.*
 
-### 2. `app-idea-to-build-prompt`
+### 3. `app-idea-to-build-prompt`
 **App Idea → Concept GUI → Build Prompt**
 Guides the full workflow for turning a raw app or product idea into concrete artifacts.
 - **Concept GUI:** Creates an interactive HTML/CSS/JS concept that you can click through.
 - **Build Prompt:** Generates a comprehensive and structured prompt designed to be handed off to an autonomous coding agent (like Claude Code) for the actual build.
 *Use this when pitching an idea to flesh out features, make UI/UX design choices, and prepare a solid spec before development starts.*
 
-### 3. `context-handoff`
+### 4. `context-handoff`
 **Lossless Conversation Exporter**
 Exports the current conversation context into a structured, lossless package.
 - Creates a human-readable Markdown transcript and a canonical JSON record.
 - Bundles any uploaded files or images into a zip.
 *Perfect for long conversations hitting context limits, sharing context with team members, or migrating a session to a new AI workspace without starting from scratch.*
 
-### 4. `context-resume`
+### 5. `context-resume`
 **Context Loader & Resumer**
 The receiving-end counterpart to `context-handoff`.
 - Reads the handoff package (`handoff.json`, `handoff.md`, and zip archives).
 - Rehydrates the AI's context with all prior decisions, constraints, and files so work can continue seamlessly.
 *Triggered at the start of a new conversation by uploading the handoff package to pick up exactly where you left off.*
 
-### 5. `external-delegation`
+### 6. `external-delegation`
 **Cross-Session AI Handoff Prompt Generator**
 Crafts a self-contained delegation prompt for handing off work to another AI session on a different account or platform.
 - Translates current context, decisions, and codebase state into an over-specified prompt.
 - Ensures the receiving model has exactly what it needs to continue without assumptions.
 *Use when you need another model to continue work but the session boundary erases context.*
 
-### 6. `project-uphaul`
+### 7. `project-uphaul`
 **Project Audit & Overhaul Pipeline**
 Runs a full, dynamic audit-and-overhaul pipeline on a project or codebase you didn't build or aren't familiar with.
 - **Sequences specialist skills:** Calls router, review, and autoresearch skills in a specific order.
@@ -70,7 +79,7 @@ Runs a full, dynamic audit-and-overhaul pipeline on a project or codebase you di
 - **Bundled Capabilities:** Built using the Meta Skill Router, Code Overhaul Skill, Autoresearch Skill, and ARA Rigor Reviewer.
 *Trigger this when you inherit a messy project, want to audit code built by a weaker model, or need a structured quality review.*
 
-### 7. `yt-deep-extraction`
+### 8. `yt-deep-extraction`
 **YouTube Channel Deep Research & Extraction**
 Deeply and losslessly extracts everything from a YouTube channel, playlist, or video list.
 - Gathers metadata, full transcripts, visuals, chapters, and creator claims.
