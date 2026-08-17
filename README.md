@@ -28,9 +28,10 @@ Each skill is self-contained in its own independent folder and includes its own 
 
 ### 1. `ghosty-spec`
 **Spec-Driven Development & Wave DAG Engine**
-Injects the Ghosty Spec-Driven Development (SDD) workflow and a parallel execution engine natively into the workspace.
-- **Documentation First:** Forces the creation of rigorous requirements, architectural designs, and task lists before execution.
-- **Wave DAG Execution:** Parses tasks into dependency waves and dynamically schedules them across specialized agents in parallel.
+Injects the Ghosty Spec-Driven Development (SDD) workflow and a parallel execution engine natively into the workspace, using the exact on-disk spec format read and written by the Kiro IDE.
+- **Kiro-Compatible Format:** Reads and writes `.kiro/specs/{feature}/` with `.config.kiro` metadata, EARS-formatted requirements, and Kiro's own checkbox/task-numbering conventions, so specs are interchangeable with the real Kiro app in both directions.
+- **Documentation First:** Forces the creation of rigorous requirements, architectural designs, and task lists before execution, honoring `workflowType` (requirements-first or design-first) and `specType` (feature or bugfix).
+- **Resumable Wave DAG Execution:** Parses tasks into dependency waves, dynamically schedules them across specialized agents in parallel, and writes progress back into `tasks.md` so a run can be closed and resumed exactly where it left off.
 - **Quality & Trackability:** Trades immediate speed for deliberate correctness, allowing drafts to be reviewed and modified before code is written.
 *Use this when starting complex, multi-step projects where code quality, architectural integrity, and strict traceability matter more than raw speed.*
 
