@@ -83,11 +83,20 @@ Runs a full, dynamic audit-and-overhaul pipeline on a project or codebase you di
 ### 8. `yt-deep-extraction`
 **YouTube Channel Deep Research & Extraction**
 Deeply and losslessly extracts everything from a YouTube channel, playlist, or video list.
-- Gathers metadata, full transcripts, visuals, chapters, and creator claims.
-- Compiles per-video research files, a cross-referenced master report, and an interactive HTML lesson.
+- **Gathers metadata, full transcripts, visuals, chapters, and creator claims.**
+- **Compiles per-video research files, a cross-referenced master report, and an interactive HTML lesson.**
 - Model and runtime agnostic; operates with whatever tools the host agent has available.
 *Use this whenever you want to learn from, archive, build a course from, or mine knowledge out of any YouTube channel or set of videos.*
 
+### 9. `scenario-coverage-testing`
+**Full-Coverage Scenario QA for Agentic-AI Projects**
+A domain-agnostic testing methodology that simulates realistic end-to-end user journeys across an entire project instead of isolated feature checks, with continuous monitoring and fix-forward recovery on every failure.
+- **Universal Pipeline:** Maps any real project onto a 10-stage skeleton (intake → agent generation → wait/poll → review/edit → validation → issue detection → fix cycle → re-validation → finalization → post-completion check), then instantiates it with the actual screens, commands, and tools of the specific system.
+- **Continuous Monitoring:** Every step is a checkpoint — watch logs, console output, network responses, exit codes after each action rather than only when something visibly breaks, catching silent failures (swallowed exceptions, degraded fallbacks) before they cascade into someone else's bug three steps later.
+- **Fix-Forward Protocol:** When something breaks, stop at the exact failure point, diagnose root cause, apply the smallest correct fix, verify in isolation, then resume the scenario from that step so the persona's journey stays continuous and realistic — never restart-and-hope, never silently skip a step.
+- **Coverage Matrix & Personas:** Builds an exhaustive surface inventory (GUI screens, CLI commands, API endpoints, agent handoffs, background jobs), designs 5-6 diverse personas covering every cell of that matrix with different entry points, tool combinations, data scales, and failure injection points, ensuring "full coverage" is a deliverable not a hope.
+- **Deliverables:** Coverage matrix filled in, bug log for every incident found (with reproduction steps if unfixable), and a plain-language verdict summary of what's solid, risky, or needs human decision.
+*Use this when you want to stress test or "break" an app built with Claude Code/Codex/omp.sh/Antigravity CLI, prep something for shipping, or run full QA on any agentic-AI project.*
 ## How to Use
 
 This repository offers skills in two different formats depending on where you intend to use them:
